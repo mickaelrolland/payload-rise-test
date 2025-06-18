@@ -1,0 +1,102 @@
+.hero {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	color: white;
+	text-align: center;
+}
+
+.hero--small {
+	min-height: 40vh;
+}
+
+.hero--medium {
+	min-height: 60vh;
+}
+
+.hero--large {
+	min-height: 80vh;
+}
+
+.hero--fullscreen {
+	min-height: 100vh;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+}
+
+.backgroundImage {
+	object-fit: cover;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2;
+}
+
+.overlay--light {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.overlay--dark {
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+	position: relative;
+	z-index: 3;
+	width: 100%;
+}
+
+.textContent {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.title {
+	font-size: 3rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	line-height: 1.2;
+}
+
+.subtitle {
+	font-size: 1.25rem;
+	margin-bottom: 2rem;
+	opacity: 0.9;
+	line-height: 1.6;
+}
+
+.buttons {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+@media (max-width: 768px) {
+	.title {
+		font-size: 2rem;
+	}
+
+	.subtitle {
+		font-size: 1.125rem;
+	}
+
+	.buttons {
+		flex-direction: column;
+		align-items: center;
+	}
+}

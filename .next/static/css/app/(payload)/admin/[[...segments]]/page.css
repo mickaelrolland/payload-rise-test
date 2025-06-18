@@ -1,0 +1,1529 @@
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[10].use[3]!./node_modules/.pnpm/react-image-crop@10.1.8_react@19.0.0/node_modules/react-image-crop/dist/ReactCrop.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ReactCrop{position:relative;display:inline-block;cursor:crosshair;overflow:hidden;max-width:100%}.ReactCrop *,.ReactCrop *:before,.ReactCrop *:after{box-sizing:border-box}.ReactCrop--disabled,.ReactCrop--locked{cursor:inherit}.ReactCrop__child-wrapper{max-height:inherit}.ReactCrop__child-wrapper>img,.ReactCrop__child-wrapper>video{display:block;max-width:100%;max-height:inherit}.ReactCrop:not(.ReactCrop--disabled) .ReactCrop__child-wrapper>img,.ReactCrop:not(.ReactCrop--disabled) .ReactCrop__child-wrapper>video{touch-action:none}.ReactCrop:not(.ReactCrop--disabled) .ReactCrop__crop-selection{touch-action:none}.ReactCrop__crop-selection{position:absolute;top:0;left:0;transform:translateZ(0);cursor:move;box-shadow:0 0 0 9999em #00000080}.ReactCrop--disabled .ReactCrop__crop-selection{cursor:inherit}.ReactCrop--circular-crop .ReactCrop__crop-selection{border-radius:50%}.ReactCrop--no-animate .ReactCrop__crop-selection{outline:1px dashed white}.ReactCrop__crop-selection:not(.ReactCrop--no-animate .ReactCrop__crop-selection){animation:marching-ants 1s;background-image:linear-gradient(to right,#fff 50%,#444 50%),linear-gradient(to right,#fff 50%,#444 50%),linear-gradient(to bottom,#fff 50%,#444 50%),linear-gradient(to bottom,#fff 50%,#444 50%);background-size:10px 1px,10px 1px,1px 10px,1px 10px;background-position:0 0,0 100%,0 0,100% 0;background-repeat:repeat-x,repeat-x,repeat-y,repeat-y;color:#fff;animation-play-state:running;animation-timing-function:linear;animation-iteration-count:infinite}@keyframes marching-ants{0%{background-position:0 0,0 100%,0 0,100% 0}to{background-position:20px 0,-20px 100%,0 -20px,100% 20px}}.ReactCrop__crop-selection:focus{outline:none;border-color:#00f;border-style:solid}.ReactCrop--invisible-crop .ReactCrop__crop-selection{display:none}.ReactCrop__rule-of-thirds-vt:before,.ReactCrop__rule-of-thirds-vt:after,.ReactCrop__rule-of-thirds-hz:before,.ReactCrop__rule-of-thirds-hz:after{content:"";display:block;position:absolute;background-color:#fff6}.ReactCrop__rule-of-thirds-vt:before,.ReactCrop__rule-of-thirds-vt:after{width:1px;height:100%}.ReactCrop__rule-of-thirds-vt:before{left:33.3333333333%}.ReactCrop__rule-of-thirds-vt:after{left:66.6666666667%}.ReactCrop__rule-of-thirds-hz:before,.ReactCrop__rule-of-thirds-hz:after{width:100%;height:1px}.ReactCrop__rule-of-thirds-hz:before{top:33.3333333333%}.ReactCrop__rule-of-thirds-hz:after{top:66.6666666667%}.ReactCrop__drag-handle{position:absolute}.ReactCrop__drag-handle:after{position:absolute;content:"";display:block;width:10px;height:10px;background-color:#0003;border:1px solid rgba(255,255,255,.7);outline:1px solid transparent}.ReactCrop__drag-handle:focus:after{border-color:#00f;background:#2dbfff}.ReactCrop .ord-nw{top:0;left:0;margin-top:-5px;margin-left:-5px;cursor:nw-resize}.ReactCrop .ord-nw:after{top:0;left:0}.ReactCrop .ord-n{top:0;left:50%;margin-top:-5px;margin-left:-5px;cursor:n-resize}.ReactCrop .ord-n:after{top:0}.ReactCrop .ord-ne{top:0;right:0;margin-top:-5px;margin-right:-5px;cursor:ne-resize}.ReactCrop .ord-ne:after{top:0;right:0}.ReactCrop .ord-e{top:50%;right:0;margin-top:-5px;margin-right:-5px;cursor:e-resize}.ReactCrop .ord-e:after{right:0}.ReactCrop .ord-se{bottom:0;right:0;margin-bottom:-5px;margin-right:-5px;cursor:se-resize}.ReactCrop .ord-se:after{bottom:0;right:0}.ReactCrop .ord-s{bottom:0;left:50%;margin-bottom:-5px;margin-left:-5px;cursor:s-resize}.ReactCrop .ord-s:after{bottom:0}.ReactCrop .ord-sw{bottom:0;left:0;margin-bottom:-5px;margin-left:-5px;cursor:sw-resize}.ReactCrop .ord-sw:after{bottom:0;left:0}.ReactCrop .ord-w{top:50%;left:0;margin-top:-5px;margin-left:-5px;cursor:w-resize}.ReactCrop .ord-w:after{left:0}.ReactCrop__disabled .ReactCrop__drag-handle{cursor:inherit}.ReactCrop__drag-bar{position:absolute}.ReactCrop__drag-bar.ord-n{top:0;left:0;width:100%;height:6px;margin-top:-3px}.ReactCrop__drag-bar.ord-e{right:0;top:0;width:6px;height:100%;margin-right:-3px}.ReactCrop__drag-bar.ord-s{bottom:0;left:0;width:100%;height:6px;margin-bottom:-3px}.ReactCrop__drag-bar.ord-w{top:0;left:0;width:6px;height:100%;margin-left:-3px}.ReactCrop--new-crop .ReactCrop__drag-bar,.ReactCrop--new-crop .ReactCrop__drag-handle,.ReactCrop--fixed-aspect .ReactCrop__drag-bar,.ReactCrop--fixed-aspect .ReactCrop__drag-handle.ord-n,.ReactCrop--fixed-aspect .ReactCrop__drag-handle.ord-e,.ReactCrop--fixed-aspect .ReactCrop__drag-handle.ord-s,.ReactCrop--fixed-aspect .ReactCrop__drag-handle.ord-w{display:none}@media (pointer: coarse){.ReactCrop .ord-n,.ReactCrop .ord-e,.ReactCrop .ord-s,.ReactCrop .ord-w{display:none}.ReactCrop__drag-handle{width:24px;height:24px}}
+
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/buttons.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .rich-text__button {
+    position: relative;
+    cursor: pointer;
+  }
+  .rich-text__button svg {
+    width: 15px;
+    height: 15px;
+  }
+  .rich-text__button--disabled {
+    opacity: 0.4;
+  }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/elements/blockquote/index.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .rich-text-blockquote[data-slate-node=element] {
+    margin: 12.5px 0;
+    padding-left: 12.5px;
+    border-left: 1px solid var(--theme-elevation-200);
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/icons/IndentLeft/index.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .icon--indent-left {
+    height: 1.5384615385rem;
+    width: 1.5384615385rem;
+  }
+  .icon--indent-left .stroke {
+    fill: none;
+    stroke: var(--theme-elevation-800);
+    stroke-width: 2px;
+  }
+  .icon--indent-left .fill {
+    fill: var(--theme-elevation-800);
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/icons/IndentRight/index.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .icon--indent-right {
+    height: 1.5384615385rem;
+    width: 1.5384615385rem;
+  }
+  .icon--indent-right .stroke {
+    fill: none;
+    stroke: var(--theme-elevation-800);
+    stroke-width: 2px;
+  }
+  .icon--indent-right .fill {
+    fill: var(--theme-elevation-800);
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/icons/Link/index.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .icon--link {
+    width: 1.5384615385rem;
+    height: 1.5384615385rem;
+  }
+  .icon--link .stroke {
+    stroke: var(--theme-elevation-800);
+    stroke-width: 1px;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/elements/link/LinkDrawer/index.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .rich-text-link-edit-modal__template {
+    position: relative;
+    z-index: 1;
+    padding-top: 20px;
+    padding-bottom: 40px;
+  }
+  .rich-text-link-edit-modal__header {
+    width: 100%;
+    margin-bottom: 1.5384615385rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 1024px) {
+    .rich-text-link-edit-modal__header {
+      margin-top: 30px;
+    }
+  }
+  .rich-text-link-edit-modal__header-text {
+    margin: 0;
+  }
+  .rich-text-link-edit-modal__header-close {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    width: 20px;
+    height: 20px;
+  }
+  .rich-text-link-edit-modal__header-close svg {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    inset-inline-start: -10px;
+    top: -10px;
+  }
+  .rich-text-link-edit-modal__header-close svg .stroke {
+    stroke-width: 2px;
+    vector-effect: non-scaling-stroke;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/elements/link/Element/index.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {
+  .rich-text-link__popup {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    font-family: var(--font-body);
+  }
+}
+@layer payload-default {
+  .rich-text-link__popup button {
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    color: currentColor;
+    font-family: var(--font-body);
+  }
+}
+@layer payload-default {
+  .rich-text-link {
+    position: relative;
+  }
+  .rich-text-link .popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .rich-text-link .popup .popup__hide-scrollbar,
+  .rich-text-link .popup .popup__scroll-container {
+    overflow: visible;
+  }
+  .rich-text-link .popup .popup__scroll-content {
+    white-space: pre;
+  }
+  .rich-text-link .icon--x line {
+    stroke-width: 2px;
+  }
+  .rich-text-link__popup {
+    font-family: var(--font-body);
+    display: flex;
+  }
+  .rich-text-link__popup button {
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0;
+  }
+  .rich-text-link__link-label {
+    max-width: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-radius: 2px;
+  }
+  .rich-text-link__link-label:hover {
+    background-color: var(--popup-button-highlight);
+  }
+  .rich-text-link__popup {
+    display: flex;
+    gap: calc(var(--base) * 0.25);
+  }
+  .rich-text-link__popup button:hover .btn__icon {
+    background-color: var(--popup-button-highlight);
+  }
+  .rich-text-link__popup button:hover .btn__icon .fill {
+    fill: var(--theme-text);
+  }
+  .rich-text-link__popup button:hover .btn__icon .stroke {
+    stroke: var(--theme-text);
+  }
+  .rich-text-link__popup-toggler {
+    position: relative;
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    color: var(--theme-success-600);
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    cursor: text;
+  }
+  .rich-text-link__popup-toggler:focus, .rich-text-link__popup-toggler:focus-within {
+    outline: none;
+  }
+  .rich-text-link__popup-toggler--open {
+    z-index: var(--z-popup);
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/elements/ol/index.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .rich-text-ol[data-slate-node=element] {
+    margin: 12.5px 0;
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/icons/Relationship/index.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .icon--relationship {
+    height: 1.5384615385rem;
+    width: 1.5384615385rem;
+  }
+  .icon--relationship .stroke {
+    fill: none;
+    stroke: var(--theme-elevation-800);
+    stroke-width: 2px;
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/elements/relationship/Button/index.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .relationship-rich-text-button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/elements/relationship/Element/index.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {
+  .rich-text-relationship {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    font-family: var(--font-body);
+  }
+}
+@layer payload-default {}
+@layer payload-default {
+  .rich-text-relationship {
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    background: var(--theme-input-bg);
+    border: 1px solid var(--theme-elevation-100);
+    max-width: 300px;
+    font-family: var(--font-body);
+  }
+  .rich-text-relationship:hover {
+    border: 1px solid var(--theme-elevation-150);
+  }
+  .rich-text-relationship[data-slate-node=element] {
+    margin: 12.5px 0;
+  }
+  .rich-text-relationship__label {
+    margin-bottom: 5px;
+  }
+  .rich-text-relationship__title {
+    margin: 0;
+  }
+  .rich-text-relationship__label, .rich-text-relationship__title {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    line-height: 1 !important;
+  }
+  .rich-text-relationship__title {
+    font-weight: bold;
+  }
+  .rich-text-relationship__wrap {
+    flex-grow: 1;
+    overflow: hidden;
+  }
+  .rich-text-relationship--selected {
+    box-shadow: 0 0 0 2px var(--theme-success-500);
+    outline: none;
+  }
+  .rich-text-relationship .rich-text-relationship__doc-drawer-toggler {
+    text-decoration: underline;
+    pointer-events: all;
+    line-height: inherit;
+  }
+  .rich-text-relationship__actions {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 10px;
+  }
+  .rich-text-relationship__actions > *:not(:last-child) {
+    margin-right: 5px;
+  }
+  .rich-text-relationship__removeButton {
+    margin: 0;
+  }
+  .rich-text-relationship__removeButton line {
+    stroke-width: 2px;
+  }
+  .rich-text-relationship__removeButton:disabled {
+    color: var(--theme-elevation-300);
+    pointer-events: none;
+  }
+  .rich-text-relationship__doc-drawer-toggler > *, .rich-text-relationship__list-drawer-toggler > * {
+    margin: 0;
+  }
+  .rich-text-relationship__doc-drawer-toggler:disabled, .rich-text-relationship__list-drawer-toggler:disabled {
+    color: var(--theme-elevation-300);
+    pointer-events: none;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/elements/ul/index.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .rich-text-ul[data-slate-node=element] {
+    margin: 12.5px 0;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/icons/Upload/index.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .icon--upload {
+    height: 1.5384615385rem;
+    width: 1.5384615385rem;
+  }
+  .icon--upload .fill {
+    fill: var(--theme-elevation-800);
+    stroke: none;
+  }
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/elements/upload/Button/index.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .upload-rich-text-button {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+/*!*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+richtext-slate@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payloa_kgut3ltleub42a5exgo7z6im34/node_modules/@payloadcms/richtext-slate/dist/field/elements/upload/Element/index.scss ***!
+  \*************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {
+  .rich-text-upload {
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: normal;
+    font-family: var(--font-body);
+  }
+}
+@layer payload-default {}
+@layer payload-default {
+  .rich-text-upload {
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    background: var(--theme-input-bg);
+    border: 1px solid var(--theme-elevation-100);
+    position: relative;
+    font-family: var(--font-body);
+  }
+  .rich-text-upload:hover {
+    border: 1px solid var(--theme-elevation-150);
+  }
+  .rich-text-upload[data-slate-node=element] {
+    margin: 12.5px 0;
+  }
+  .rich-text-upload__card {
+    box-shadow: 0 7px 14px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .rich-text-upload__topRow {
+    display: flex;
+  }
+  .rich-text-upload__thumbnail {
+    width: 65px;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+  .rich-text-upload__thumbnail img,
+  .rich-text-upload__thumbnail svg {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    background-color: var(--theme-elevation-800);
+  }
+  .rich-text-upload__topRowRightPanel {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    justify-content: space-between;
+    max-width: calc(100% - 65px);
+  }
+  .rich-text-upload__actions {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin-left: 10px;
+  }
+  .rich-text-upload__actions .rich-text-upload__doc-drawer-toggler {
+    pointer-events: all;
+  }
+  .rich-text-upload__actions > *:not(:last-child) {
+    margin-right: 5px;
+  }
+  .rich-text-upload__removeButton {
+    margin: 0;
+  }
+  .rich-text-upload__removeButton line {
+    stroke-width: 2px;
+  }
+  .rich-text-upload__removeButton:disabled {
+    color: var(--theme-elevation-300);
+    pointer-events: none;
+  }
+  .rich-text-upload__upload-drawer-toggler {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    line-height: inherit;
+  }
+  .rich-text-upload__doc-drawer-toggler {
+    text-decoration: underline;
+  }
+  .rich-text-upload__doc-drawer-toggler > *, .rich-text-upload__list-drawer-toggler > *, .rich-text-upload__upload-drawer-toggler > * {
+    margin: 0;
+  }
+  .rich-text-upload__doc-drawer-toggler:disabled, .rich-text-upload__list-drawer-toggler:disabled, .rich-text-upload__upload-drawer-toggler:disabled {
+    color: var(--theme-elevation-300);
+    pointer-events: none;
+  }
+  .rich-text-upload__collectionLabel {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .rich-text-upload__bottomRow {
+    padding: 10px;
+    border-top: 1px solid var(--theme-elevation-100);
+  }
+  .rich-text-upload h5 {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .rich-text-upload__wrap {
+    padding: 10px 10px 10px 20px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .rich-text-upload--selected {
+    box-shadow: 0 0 0 2px var(--theme-success-500);
+    outline: none;
+  }
+  @media (max-width: 768px) {
+    .rich-text-upload__topRowRightPanel {
+      padding: 15px 10px;
+    }
+  }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/icons/Document/index.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {
+  .icon--document {
+    height: var(--base);
+    width: var(--base);
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/icons/X/index.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .icon--x .stroke {
+    stroke: currentColor;
+    stroke-width: 1px;
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/Gutter/index.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .gutter--left {
+    padding-left: var(--gutter-h);
+  }
+  .gutter--right {
+    padding-right: var(--gutter-h);
+  }
+  .gutter--negative-left {
+    margin-left: calc(-1 * var(--gutter-h));
+  }
+  .gutter--negative-right {
+    margin-right: calc(-1 * var(--gutter-h));
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/Drawer/index.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {
+  .drawer__close {
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    color: currentColor;
+    font-family: var(--font-body);
+  }
+}
+@layer payload-default {
+  .drawer {
+    display: flex;
+    overflow: hidden;
+    position: fixed;
+    height: 100vh;
+  }
+  .drawer__blur-bg {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all 200ms linear;
+  }
+  .drawer__blur-bg:before, .drawer__blur-bg:after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .drawer__blur-bg:before {
+    background: var(--theme-bg);
+    opacity: 0.75;
+  }
+  .drawer__blur-bg:after {
+    -webkit-backdrop-filter: blur(8px);
+            backdrop-filter: blur(8px);
+  }
+  .drawer__content {
+    opacity: 0;
+    transform: translateX(calc(var(--base) * 4));
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    transition: all 200ms linear;
+    background-color: var(--theme-bg);
+  }
+  .drawer__content-children {
+    position: relative;
+    z-index: 1;
+    overflow: auto;
+    height: 100%;
+  }
+  .drawer--is-open .drawer__content, .drawer--is-open .drawer__blur-bg {
+    opacity: 1;
+  }
+  .drawer--is-open .drawer__close {
+    opacity: 0.1;
+    transition: opacity 200ms linear;
+    transition-delay: 100ms;
+  }
+  .drawer--is-open .drawer__content {
+    transform: translateX(0);
+  }
+  .drawer__close {
+    position: relative;
+    z-index: 2;
+    flex-shrink: 0;
+    text-indent: -9999px;
+    cursor: pointer;
+    opacity: 0;
+    will-change: opacity;
+    transition: none;
+    transition-delay: 0ms;
+    flex-grow: 1;
+    background: var(--theme-elevation-800);
+  }
+  .drawer__close:active, .drawer__close:focus {
+    outline: 0;
+  }
+  .drawer__header {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .drawer__header__title {
+    margin: 0;
+    flex-grow: 1;
+  }
+  .drawer__header__close {
+    border: 0;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+  }
+  .drawer__header__close svg {
+    margin: -24px;
+    width: 48px;
+    height: 48px;
+    position: relative;
+  }
+  .drawer__header__close svg .stroke {
+    stroke-width: 1px;
+    vector-effect: non-scaling-stroke;
+  }
+  @media (max-width: 1024px) {
+    .drawer__header {
+      margin-top: 30px;
+    }
+  }
+  html[data-theme=dark] .drawer__close {
+    background: var(--color-base-1000);
+  }
+  html[data-theme=dark] .drawer--is-open .drawer__close {
+    opacity: 0.25;
+  }
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/icons/Folder/index.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {
+  .icon--folder {
+    height: var(--base);
+    width: var(--base);
+  }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/FolderView/ColoredFolderIcon/index.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {
+  .colored-folder-icon {
+    color: var(--theme-elevation-300);
+  }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/FolderView/DraggableWithClick/index.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {
+  .draggable-with-click {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+  }
+}
+/*!***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/FolderView/SimpleTable/index.scss ***!
+  \***************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .simple-table {
+    margin-bottom: var(--base);
+    overflow: auto;
+    max-width: 100%;
+  }
+  .simple-table__table {
+    min-width: 100%;
+    border-collapse: collapse;
+  }
+  .simple-table__thead {
+    color: var(--theme-elevation-400);
+  }
+  .simple-table__th {
+    font-weight: normal;
+    text-align: left;
+  }
+  [dir=rtl] .simple-table__th {
+    text-align: right;
+  }
+  .simple-table__th, .simple-table__td {
+    vertical-align: top;
+    padding: calc(var(--base) * 0.6);
+    min-width: 150px;
+    position: relative;
+  }
+  .simple-table__th:first-child, .simple-table__td:first-child {
+    -webkit-padding-start: calc(var(--base) * 0.8);
+            padding-inline-start: calc(var(--base) * 0.8);
+  }
+  .simple-table__th:last-child, .simple-table__td:last-child {
+    -webkit-padding-end: calc(var(--base) * 0.8);
+            padding-inline-end: calc(var(--base) * 0.8);
+  }
+  .simple-table .simple-table__thead .simple-table__tr:after {
+    background-color: transparent;
+  }
+  .simple-table__hidden-cell {
+    position: absolute;
+    padding: 0;
+  }
+  @media (max-width: 1024px) {
+    .simple-table__th, .simple-table__td {
+      max-width: 70vw;
+    }
+  }
+}
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/FolderView/DraggableTableRow/index.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {
+  .draggable-table-row {
+    --border-top-left-radius: var(--style-radius-m);
+    --border-top-right-radius: var(--style-radius-m);
+    --border-bottom-right-radius: var(--style-radius-m);
+    --border-bottom-left-radius: var(--style-radius-m);
+    --row-text-color: var(--theme-text);
+    --row-icon-opacity: 1;
+    --row-icon-color: var(--theme-elevation-400);
+    --row-bg-color: transparent;
+    --row-opacity: 1;
+    --foreground-opacity: 0;
+    --row-cursor: pointer;
+    isolation: isolate;
+    opacity: var(--row-opacity);
+    cursor: var(--row-cursor);
+  }
+  .draggable-table-row__first-td {
+    border-top-left-radius: var(--border-top-left-radius);
+    border-bottom-left-radius: var(--border-bottom-left-radius);
+  }
+  .draggable-table-row td.draggable-table-row__last-td {
+    border-top-right-radius: var(--border-top-right-radius);
+    border-bottom-right-radius: var(--border-bottom-right-radius);
+    -webkit-padding-end: calc(var(--base) * 0.8);
+            padding-inline-end: calc(var(--base) * 0.8);
+  }
+  .draggable-table-row:not(.draggable-table-row--selected):nth-child(odd) {
+    --row-bg-color: var(--theme-elevation-50);
+  }
+  .draggable-table-row:nth-child(odd):after {
+    display: none;
+  }
+  .draggable-table-row--focused.draggable-table-row:nth-child(odd), .draggable-table-row--focused.draggable-table-row:nth-child(even) {
+    --row-bg-color: var(--theme-elevation-100);
+  }
+  .draggable-table-row--disabled {
+    --row-cursor: no-drop;
+    --row-opacity: 0.6;
+  }
+  .draggable-table-row--selected {
+    --row-icon-color: var(--theme-success-800);
+    --row-icon-opacity: 0.6;
+  }
+  .draggable-table-row--selected.draggable-table-row:nth-child(odd), .draggable-table-row--selected.draggable-table-row:nth-child(even) {
+    --row-bg-color: var(--theme-success-150);
+  }
+  .draggable-table-row--selected + .draggable-table-row--selected {
+    --border-top-left-radius: 0;
+    --border-top-right-radius: 0;
+  }
+  .draggable-table-row--selected:not(:last-child):has(+ .draggable-table-row--selected) {
+    --border-bottom-left-radius: 0;
+    --border-bottom-right-radius: 0;
+  }
+  .draggable-table-row--over.draggable-table-row:nth-child(odd), .draggable-table-row--over.draggable-table-row:nth-child(even) {
+    --row-bg-color: var(--theme-elevation-150);
+  }
+  .draggable-table-row__cell-content {
+    position: relative;
+    z-index: 1;
+    color: var(--row-text-color);
+    background-color: var(--row-bg-color);
+  }
+  .draggable-table-row__drag-handle {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    cursor: var(--row-cursor);
+    background: none;
+    border: none;
+    padding: 0;
+    outline-offset: 0;
+    z-index: 2;
+  }
+  .draggable-table-row__drag-handle:focus-visible {
+    box-shadow: inset 0px 0px 0px 2px var(--theme-text);
+    outline: none;
+  }
+  .draggable-table-row__drop-area {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+  }
+  .draggable-table-row .simple-table__hidden-cell {
+    position: absolute;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+  }
+  .draggable-table-row.draggable-table-row {
+    position: relative;
+  }
+  .draggable-table-row .icon {
+    color: var(--row-icon-color);
+    opacity: var(--row-icon-opacity);
+  }
+}
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/FolderView/FolderFileTable/index.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .folder-file-table__cell-with-icon {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: calc(var(--base) / 2);
+    gap: calc(var(--base) / 2);
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/icons/ThreeDots/index.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.icon--dots {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2px;
+  height: 2rem;
+  width: 2rem;
+}
+.icon--dots > div {
+  width: 3px;
+  height: 3px;
+  border-radius: 100%;
+  background-color: currentColor;
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/Popup/PopupButtonList/index.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {
+  .popup-button-list__button button, .popup-button-list__button {
+    border: 0;
+    background: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+    color: currentColor;
+    font-family: var(--font-body);
+  }
+}
+@layer payload-default {
+  .popup-button-list {
+    --list-button-padding: calc(var(--base) * 0.5);
+    --popup-button-list-gap: 3px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: var(--popup-button-list-gap);
+  }
+  [dir=rtl] .popup-button-list__text-align--left {
+    text-align: right;
+  }
+  .popup-button-list__text-align--left {
+    text-align: left;
+  }
+  .popup-button-list__text-align--center {
+    text-align: center;
+  }
+  [dir=rtl] .popup-button-list__text-align--right {
+    text-align: left;
+  }
+  .popup-button-list__text-align--right {
+    text-align: right;
+  }
+  .popup-button-list__button {
+    padding-left: var(--list-button-padding);
+    padding-right: var(--list-button-padding);
+    padding-top: 2px;
+    padding-bottom: 2px;
+    cursor: pointer;
+    text-align: inherit;
+    line-height: var(--base);
+    text-decoration: none;
+    border-radius: 3px;
+  }
+  .popup-button-list__button button:focus-visible {
+    outline: none;
+  }
+  .popup-button-list__button:hover, .popup-button-list__button:focus-visible, .popup-button-list__button:focus-within {
+    background-color: var(--popup-button-highlight);
+  }
+  .popup-button-list__button--selected {
+    background-color: var(--theme-elevation-150);
+  }
+  .popup-button-list__disabled {
+    cursor: not-allowed;
+    --popup-button-highlight: transparent;
+    background-color: var(--popup-button-highlight);
+    color: var(--theme-elevation-350);
+  }
+  .popup-button-list__disabled:hover {
+    --popup-button-highlight: var(--theme-elevation-50);
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/Popup/PopupDivider/index.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .popup-divider {
+    width: 100%;
+    height: 1px;
+    background-color: var(--theme-elevation-150);
+    border: none;
+    margin: calc(var(--base) * 0.75) 0;
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/Popup/PopupGroupLabel/index.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .popup-list-group-label {
+    color: var(--theme-elevation-500);
+    font-weight: 500;
+    line-height: 1;
+    margin-top: calc(var(--base) * 0.25);
+    margin-bottom: calc(var(--base) * 0.5);
+  }
+}
+/*!***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/Popup/PopupTrigger/index.scss ***!
+  \***********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .popup-button {
+    height: 100%;
+    color: currentColor;
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    border: 0;
+    cursor: pointer;
+    display: inline-flex;
+  }
+  .popup-button--background {
+    background: transparent;
+  }
+  .popup-button--size-xsmall {
+    padding: 2px;
+  }
+  .popup-button--size-small {
+    padding: 4px;
+  }
+  .popup-button--size-medium {
+    padding: 6px;
+  }
+  .popup-button--size-large {
+    padding: 8px;
+  }
+  .popup-button--disabled {
+    cursor: not-allowed;
+  }
+}
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/Popup/index.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .popup {
+    --popup-button-highlight: var(--theme-elevation-200);
+    --popup-bg: var(--theme-input-bg);
+    --popup-text: var(--theme-text);
+    --popup-caret-size: 10px;
+    --popup-x-padding: calc(var(--base) * 0.33);
+    --popup-padding: calc(var(--base) * 0.5);
+    --button-size-offset: -8px;
+    position: relative;
+  }
+  .popup__trigger-wrap {
+    display: flex;
+    align-items: stretch;
+    height: 100%;
+    cursor: pointer;
+  }
+  .popup__content {
+    position: absolute;
+    background: var(--popup-bg);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    z-index: var(--z-popup);
+    max-width: calc(100vw - 1.5384615385rem);
+    color: var(--popup-text);
+    border-radius: 4px;
+    padding-left: var(--popup-padding);
+    padding-right: var(--popup-padding);
+    min-width: var(--popup-width, auto);
+  }
+  .popup__hide-scrollbar {
+    overflow: hidden;
+  }
+  .popup__scroll-container {
+    overflow-y: auto;
+    white-space: nowrap;
+    width: calc(100% + var(--scrollbar-width));
+    padding-top: var(--popup-padding);
+    padding-bottom: var(--popup-padding);
+  }
+  .popup__scroll-content {
+    width: calc(100% - var(--scrollbar-width));
+  }
+  .popup--show-scrollbar .popup__scroll-container,
+  .popup--show-scrollbar .popup__scroll-content {
+    width: 100%;
+  }
+  .popup:focus, .popup:active {
+    outline: none;
+  }
+  .popup--size-xsmall {
+    --popup-width: 80px;
+  }
+  .popup--size-xsmall .popup__content {
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.1);
+  }
+  .popup--size-small {
+    --popup-width: 100px;
+  }
+  .popup--size-small .popup__content {
+    box-shadow: 0 4px 8px -3px rgba(0, 0, 0, 0.1);
+  }
+  .popup--size-medium {
+    --popup-width: 150px;
+  }
+  .popup--size-medium .popup__content {
+    box-shadow: 0 -2px 16px -2px rgba(0, 0, 0, 0.2);
+  }
+  .popup--size-large {
+    --popup-width: 200px;
+  }
+  .popup--size-large .popup__content {
+    box-shadow: 0 -2px 16px -2px rgba(0, 0, 0, 0.2);
+  }
+  .popup--button-size-xsmall {
+    --button-size-offset: -12px;
+  }
+  .popup--button-size-small {
+    --button-size-offset: -8px;
+  }
+  .popup--button-size-medium {
+    --button-size-offset: -4px;
+  }
+  .popup--button-size-large {
+    --button-size-offset: 0px;
+  }
+  [dir=rtl] .popup--h-align-left .popup__caret {
+    right: var(--popup-padding);
+    left: unset;
+  }
+  .popup--h-align-left .popup__caret {
+    left: var(--popup-padding);
+  }
+  .popup--h-align-center .popup__content {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .popup--h-align-center .popup__caret {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  [dir=rtl] .popup--h-align-right .popup__content {
+    right: unset;
+    left: 0;
+  }
+  [dir=rtl] .popup--h-align-right .popup__caret {
+    right: unset;
+    left: var(--popup-padding);
+  }
+  .popup--h-align-right .popup__content {
+    right: var(--button-size-offset);
+  }
+  .popup--h-align-right .popup__caret {
+    right: var(--popup-padding);
+  }
+  .popup__caret {
+    position: absolute;
+    border: var(--popup-caret-size) solid transparent;
+  }
+  .popup--v-align-top .popup__content {
+    box-shadow: 0 -2px 16px -2px rgba(0, 0, 0, 0.2);
+    bottom: calc(100% + var(--popup-caret-size));
+  }
+  .popup--v-align-top .popup__caret {
+    top: calc(100% - 1px);
+    border-top-color: var(--popup-bg);
+  }
+  .popup--v-align-bottom .popup__content {
+    box-shadow: 0 2px 16px -2px rgba(0, 0, 0, 0.2);
+    top: calc(100% + var(--popup-caret-size));
+  }
+  .popup--v-align-bottom .popup__caret {
+    bottom: calc(100% - 1px);
+    border-bottom-color: var(--popup-bg);
+  }
+  .popup--active .popup__content {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+  }
+  @media (max-width: 1024px) {
+    .popup {
+      --popup-padding: calc(var(--base) * 0.25);
+    }
+    .popup--h-align-center .popup__content {
+      left: 50%;
+      transform: translateX(0%);
+    }
+    .popup--h-align-center .popup__caret {
+      left: 50%;
+      transform: translateX(0%);
+    }
+    .popup--h-align-right .popup__content {
+      right: 0;
+    }
+    .popup--h-align-right .popup__caret {
+      right: var(--popup-padding);
+    }
+    .popup--force-h-align-left .popup__content {
+      left: 0;
+      right: unset;
+      transform: unset;
+    }
+    .popup--force-h-align-left .popup__caret {
+      left: var(--popup-padding);
+      right: unset;
+      transform: unset;
+    }
+    .popup--force-h-align-right .popup__content {
+      right: 0;
+      left: unset;
+      transform: unset;
+    }
+    .popup--force-h-align-right .popup__caret {
+      right: var(--popup-padding);
+      left: unset;
+      transform: unset;
+    }
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/Thumbnail/index.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .thumbnail {
+    min-height: 100%;
+    flex-shrink: 0;
+    align-self: stretch;
+    overflow: hidden;
+  }
+  .thumbnail img,
+  .thumbnail svg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .thumbnail--size-expand {
+    max-height: 100%;
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+  }
+  .thumbnail--size-expand img,
+  .thumbnail--size-expand svg {
+    position: absolute;
+    top: 0;
+  }
+  .thumbnail--size-large {
+    max-height: 180px;
+    width: 180px;
+  }
+  .thumbnail--size-medium {
+    max-height: 140px;
+    width: 140px;
+  }
+  .thumbnail--size-small {
+    max-height: 100px;
+    width: 100px;
+  }
+  @media (max-width: 1440px) {
+    .thumbnail .thumbnail {
+      width: 100px;
+    }
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/ShimmerEffect/index.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {
+  .shimmer-effect {
+    position: relative;
+    overflow: hidden;
+    background-color: var(--theme-elevation-50);
+  }
+  .shimmer-effect__shine {
+    position: absolute;
+    scale: 1.5;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    animation: shimmer 1.75s infinite;
+    opacity: 0.75;
+    background: linear-gradient(100deg, var(--theme-elevation-50) 0%, var(--theme-elevation-50) 15%, var(--theme-elevation-150) 50%, var(--theme-elevation-50) 85%, var(--theme-elevation-50) 100%);
+  }
+  @keyframes shimmer {
+    100% {
+      transform: translate3d(100%, 0, 0);
+    }
+  }
+}
+/*!******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/FolderView/FolderFileCard/index.scss ***!
+  \******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .folder-file-card {
+    --card-border-color: var(--theme-elevation-150);
+    --card-bg-color: var(--theme-elevation-0);
+    --card-preview-bg-color: var(--theme-elevation-50);
+    --card-icon-dots-bg-color: transparent;
+    --card-icon-dots-color: var(--theme-elevation-600);
+    --card-titlebar-icon-color: var(--theme-elevation-300);
+    --card-label-color: var(--theme-text);
+    --card-preview-icon-color: var(--theme-elevation-400);
+    position: relative;
+    display: grid;
+    grid-template-areas: "details";
+    border-radius: var(--style-radius-m);
+    border: 1px solid var(--card-border-color);
+    background-color: var(--card-bg-color);
+    cursor: pointer;
+  }
+  .folder-file-card--file {
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "preview" "details";
+  }
+  .folder-file-card--over {
+    --card-border-color: var(--theme-elevation-500);
+    --card-bg-color: var(--theme-elevation-150);
+    --card-icon-dots-bg-color: transparent;
+    --card-icon-dots-color: var(--theme-elevation-400);
+    --card-titlebar-icon-color: var(--theme-elevation-250);
+    --card-label-color: var(--theme-text);
+  }
+  .folder-file-card--disabled {
+    --card-bg-color: var(--theme-elevation-50);
+    cursor: not-allowed;
+  }
+  .folder-file-card--disabled:after {
+    content: "";
+    position: absolute;
+    background-color: var(--theme-bg);
+    opacity: 0.5;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    border-radius: inherit;
+  }
+  .folder-file-card--selected {
+    --card-border-color: var(--theme-success-300);
+    --card-bg-color: var(--theme-success-50);
+    --card-preview-bg-color: var(--theme-success-50);
+    --card-icon-dots-bg-color: var(--theme-success-50);
+    --card-icon-dots-color: var(--theme-success-400);
+    --card-titlebar-icon-color: var(--theme-success-800);
+    --card-label-color: var(--theme-success-800);
+    --card-preview-icon-color: var(--theme-success-800);
+    --accessibility-outline: 2px solid var(--theme-success-600);
+  }
+  .folder-file-card--selected .popup:hover:not(.popup--active) {
+    --card-icon-dots-bg-color: var(--theme-success-100);
+  }
+  .folder-file-card--selected:has(.popup--active) {
+    --card-icon-dots-bg-color: var(--theme-success-150);
+  }
+  .folder-file-card--selected .icon--dots {
+    opacity: 1;
+  }
+  .folder-file-card--selected .folder-file-card__icon-wrap .icon {
+    opacity: 50%;
+  }
+  .folder-file-card--selected .folder-file-card__preview-area .icon {
+    opacity: 0.7;
+  }
+  .folder-file-card:not(.folder-file-card--selected) .icon--dots {
+    opacity: 0;
+  }
+  .folder-file-card:not(.folder-file-card--selected):hover, .folder-file-card:not(.folder-file-card--selected):has(.popup--active) {
+    --card-bg-color: var(--theme-elevation-50);
+  }
+  .folder-file-card:not(.folder-file-card--selected):hover .icon--dots, .folder-file-card:not(.folder-file-card--selected):has(.popup--active) .icon--dots {
+    opacity: 1;
+  }
+  .folder-file-card:not(.folder-file-card--selected) .popup:hover:not(.popup--active) {
+    --card-icon-dots-bg-color: var(--theme-elevation-150);
+  }
+  .folder-file-card:not(.folder-file-card--selected):has(.popup--active) {
+    --card-icon-dots-bg-color: var(--theme-elevation-200);
+  }
+  .folder-file-card__drag-handle {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+    outline-offset: var(--accessibility-outline-offset);
+  }
+  .folder-file-card__drag-handle:focus-visible {
+    outline: var(--accessibility-outline);
+  }
+  .folder-file-card__drop-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    pointer-events: none;
+  }
+  .folder-file-card__preview-area {
+    grid-area: preview;
+    aspect-ratio: 1/1;
+    background-color: var(--card-preview-bg-color);
+    border-top-left-radius: var(--style-radius-s);
+    border-top-right-radius: var(--style-radius-s);
+    border-bottom: 1px solid var(--card-border-color);
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    grid-template-columns: auto 50% auto;
+  }
+  .folder-file-card__preview-area:has(.thumbnail) {
+    grid-template-columns: unset;
+  }
+  .folder-file-card__preview-area > .icon {
+    grid-column: 2;
+  }
+  .folder-file-card__preview-area .icon--document {
+    pointer-events: none;
+    height: 50%;
+    width: 50%;
+    margin: auto;
+    color: var(--card-preview-icon-color);
+  }
+  .folder-file-card__preview-area .thumbnail {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: inherit;
+  }
+  .folder-file-card__preview-area .thumbnail > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+  }
+  .folder-file-card__preview-area:has(.thumbnail) {
+    justify-content: stretch;
+  }
+  .folder-file-card__preview-area img {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-top-left-radius: var(--style-radius-s);
+    border-top-right-radius: var(--style-radius-s);
+  }
+  .folder-file-card__titlebar-area {
+    position: relative;
+    pointer-events: none;
+    grid-area: details;
+    border-radius: inherit;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: 1rem;
+    gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--card-bg-color);
+  }
+  .folder-file-card__titlebar-area .popup {
+    pointer-events: all;
+  }
+  .folder-file-card__name {
+    overflow: hidden;
+    font-weight: bold;
+    text-indent: 1px;
+    text-wrap: nowrap;
+    text-overflow: ellipsis;
+    line-height: normal;
+    color: var(--card-label-color);
+  }
+  .folder-file-card__icon-wrap .icon {
+    flex-shrink: 0;
+    color: var(--card-titlebar-icon-color);
+  }
+  .folder-file-card .icon--dots {
+    rotate: 90deg;
+    transition: opacity 0.2s;
+    color: var(--card-icon-dots-color);
+    border-radius: var(--style-radius-s);
+    background-color: var(--card-icon-dots-bg-color);
+  }
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[2]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[13].oneOf[11].use[3]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[13].oneOf[11].use[4]!./node_modules/.pnpm/next@15.2.3_react-dom@19.0.0_react@19.0.0/node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[13].oneOf[11].use[5]!./node_modules/.pnpm/@payloadcms+ui@3.43.0_@types+react@19.0.1_monaco-editor@0.52.2_next@15.2.3_payload@3.43.0_rea_qqpbir2j62uytzl5od5foyfxw4/node_modules/@payloadcms/ui/dist/elements/FolderView/ItemCardGrid/index.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+@layer payload-default {}
+@layer payload-default {}
+@layer payload-default {
+  .item-card-grid {
+    --gap: var(--base);
+    grid-gap: var(--gap);
+    gap: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin-bottom: var(--base);
+  }
+  .item-card-grid__title {
+    color: var(--theme-elevation-400);
+    margin-bottom: calc(var(--base) / 2);
+  }
+}

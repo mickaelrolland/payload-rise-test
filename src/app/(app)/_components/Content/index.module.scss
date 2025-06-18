@@ -1,0 +1,30 @@
+.content {
+	padding: 3rem 0;
+}
+
+.singleColumn {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.twoColumns {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 3rem;
+	align-items: start;
+}
+
+.column {
+	// Add any column-specific styles here
+}
+
+@media (max-width: 768px) {
+	.twoColumns {
+		grid-template-columns: 1fr;
+		gap: 2rem;
+	}
+
+	.content {
+		padding: 2rem 0;
+	}
+}

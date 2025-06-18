@@ -1,0 +1,150 @@
+.cards {
+	padding: 3rem 0;
+}
+
+.title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.description {
+	font-size: 1.125rem;
+	margin-bottom: 3rem;
+	text-align: center;
+	color: #666;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.cardGrid {
+	display: grid;
+	gap: 2rem;
+}
+
+.cardGrid--grid {
+	&.cardGrid--2cols {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	&.cardGrid--3cols {
+		grid-template-columns: repeat(3, 1fr);
+	}
+
+	&.cardGrid--4cols {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+.cardGrid--horizontal {
+	grid-template-columns: 1fr;
+	gap: 1rem;
+
+	.card {
+		display: flex;
+		align-items: center;
+		text-align: left;
+
+		.cardImage {
+			flex: 0 0 200px;
+			margin-right: 2rem;
+			margin-bottom: 0;
+		}
+
+		.cardContent {
+			flex: 1;
+		}
+	}
+}
+
+.card {
+	background: white;
+	border-radius: 12px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+	transition:
+		transform 0.3s ease,
+		box-shadow 0.3s ease;
+	text-align: center;
+
+	&:hover {
+		transform: translateY(-4px);
+		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+	}
+}
+
+.cardImage {
+	margin-bottom: 1.5rem;
+	overflow: hidden;
+}
+
+.image {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	transition: transform 0.3s ease;
+}
+
+.card:hover .image {
+	transform: scale(1.05);
+}
+
+.cardContent {
+	padding: 1.5rem;
+}
+
+.cardTitle {
+	font-size: 1.25rem;
+	font-weight: 600;
+	margin-bottom: 1rem;
+	color: #333;
+}
+
+.cardDescription {
+	color: #666;
+	line-height: 1.6;
+	margin-bottom: 1.5rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.cardGrid--grid {
+		&.cardGrid--3cols,
+		&.cardGrid--4cols {
+			grid-template-columns: repeat(2, 1fr);
+		}
+	}
+
+	.cardGrid--horizontal {
+		.card {
+			flex-direction: column;
+			text-align: center;
+
+			.cardImage {
+				flex: none;
+				margin-right: 0;
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
+
+	.title {
+		font-size: 2rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.cardGrid--grid {
+		&.cardGrid--2cols,
+		&.cardGrid--3cols,
+		&.cardGrid--4cols {
+			grid-template-columns: 1fr;
+		}
+	}
+
+	.cards {
+		padding: 2rem 0;
+	}
+}

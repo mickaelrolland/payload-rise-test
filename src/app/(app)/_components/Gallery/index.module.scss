@@ -1,0 +1,185 @@
+.gallery {
+	padding: 3rem 0;
+}
+
+.title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.description {
+	font-size: 1.125rem;
+	margin-bottom: 2rem;
+	text-align: center;
+	color: #666;
+}
+
+/* Grid Layout */
+.grid {
+	display: grid;
+	gap: 1.5rem;
+}
+
+.grid--2cols {
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3cols {
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4cols {
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--masonry {
+	grid-auto-rows: max-content;
+}
+
+.gridItem {
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gridImage {
+	width: 100%;
+	height: auto;
+	display: block;
+	transition: transform 0.3s ease;
+}
+
+.gridItem:hover .gridImage {
+	transform: scale(1.05);
+}
+
+.gridCaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+	color: white;
+	padding: 1rem;
+	margin: 0;
+	font-size: 0.875rem;
+}
+
+/* Carousel Layout */
+.carousel {
+	position: relative;
+	overflow: hidden;
+	border-radius: 8px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carouselTrack {
+	display: flex;
+	transition: transform 0.3s ease;
+}
+
+.carouselSlide {
+	flex: 0 0 100%;
+	position: relative;
+}
+
+.carouselImage {
+	width: 100%;
+	height: 400px;
+	object-fit: cover;
+	display: block;
+}
+
+.carouselCaption {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+	color: white;
+	padding: 1rem;
+	margin: 0;
+}
+
+.carouselButton {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	border: none;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	font-size: 1.5rem;
+	cursor: pointer;
+	z-index: 2;
+
+	&:hover {
+		background: rgba(0, 0, 0, 0.7);
+	}
+}
+
+.carouselButtonPrev {
+	left: 1rem;
+}
+
+.carouselButtonNext {
+	right: 1rem;
+}
+
+.carouselDots {
+	display: flex;
+	justify-content: center;
+	gap: 0.5rem;
+	padding: 1rem;
+	background: rgba(0, 0, 0, 0.1);
+}
+
+.carouselDot {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	border: none;
+	background: rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+
+	&:hover {
+		background: rgba(0, 0, 0, 0.5);
+	}
+}
+
+.carouselDotActive {
+	background: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.grid--3cols,
+	.grid--4cols {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.title {
+		font-size: 2rem;
+	}
+
+	.carouselImage {
+		height: 250px;
+	}
+}
+
+@media (max-width: 480px) {
+	.grid--2cols,
+	.grid--3cols,
+	.grid--4cols {
+		grid-template-columns: 1fr;
+	}
+
+	.carouselImage {
+		height: 200px;
+	}
+}

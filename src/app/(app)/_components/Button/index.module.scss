@@ -1,55 +1,87 @@
 .button {
-  border: none;
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  background-color: transparent;
+	border: none;
+	cursor: pointer;
+	display: inline-flex;
+	justify-content: center;
+	background-color: transparent;
 }
 
 .content {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 
-  svg {
-    margin-right: calc(var(--base) / 2);
-    width: var(--base);
-    height: var(--base);
-  }
+	svg {
+		margin-right: calc(var(--base) / 2);
+		width: var(--base);
+		height: var(--base);
+	}
 }
 
 .label {
-  text-align: center;
-  display: flex;
-  align-items: center;
+	text-align: center;
+	display: flex;
+	align-items: center;
 }
 
 .button {
-  text-decoration: none;
-  display: inline-flex;
-  padding: 12px 24px;
+	text-decoration: none;
+	display: inline-flex;
+	padding: 12px 24px;
 }
 
 .primary--white {
-  background-color: black;
-  color: white;
+	background-color: black;
+	color: white;
 }
 
 .primary--black {
-  background-color: white;
-  color: black;
+	background-color: white;
+	color: black;
 }
 
 .secondary--white {
-  background-color: white;
-  box-shadow: inset 0 0 0 1px black;
+	background-color: white;
+	box-shadow: inset 0 0 0 1px black;
 }
 
 .secondary--black {
-  background-color: black;
-  box-shadow: inset 0 0 0 1px white;
+	background-color: black;
+	box-shadow: inset 0 0 0 1px white;
 }
 
 .appearance--default {
-  padding: 0;
+	padding: 0;
+}
+
+.appearance--primary {
+	background-color: #007bff;
+	color: white;
+	border-radius: 4px;
+
+	&:hover {
+		background-color: #0056b3;
+	}
+}
+
+.appearance--secondary {
+	background-color: #6c757d;
+	color: white;
+	border-radius: 4px;
+
+	&:hover {
+		background-color: #545b62;
+	}
+}
+
+.appearance--outline {
+	background-color: transparent;
+	color: #007bff;
+	border: 2px solid #007bff;
+	border-radius: 4px;
+
+	&:hover {
+		background-color: #007bff;
+		color: white;
+	}
 }

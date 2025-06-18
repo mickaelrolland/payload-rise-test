@@ -68,6 +68,9 @@ export interface Config {
   blocks: {};
   collections: {
     pages: Page;
+    posts: Post;
+    media: Media;
+    categories: Category;
     users: User;
     'payload-locked-documents': PayloadLockedDocument;
     'payload-preferences': PayloadPreference;
@@ -76,6 +79,9 @@ export interface Config {
   collectionsJoins: {};
   collectionsSelect: {
     pages: PagesSelect<false> | PagesSelect<true>;
+    posts: PostsSelect<false> | PostsSelect<true>;
+    media: MediaSelect<false> | MediaSelect<true>;
+    categories: CategoriesSelect<false> | CategoriesSelect<true>;
     users: UsersSelect<false> | UsersSelect<true>;
     'payload-locked-documents': PayloadLockedDocumentsSelect<false> | PayloadLockedDocumentsSelect<true>;
     'payload-preferences': PayloadPreferencesSelect<false> | PayloadPreferencesSelect<true>;
@@ -86,9 +92,11 @@ export interface Config {
   };
   globals: {
     'main-menu': MainMenu;
+    footer: Footer;
   };
   globalsSelect: {
     'main-menu': MainMenuSelect<false> | MainMenuSelect<true>;
+    footer: FooterSelect<false> | FooterSelect<true>;
   };
   locale: null;
   user: User & {
@@ -125,6 +133,217 @@ export interface Page {
   id: string;
   title: string;
   slug?: string | null;
+  layout: (
+    | {
+        title: string;
+        subtitle?: string | null;
+        content: {
+          [k: string]: unknown;
+        }[];
+        backgroundColor?: ('white' | 'light' | 'primary' | 'secondary') | null;
+        textAlign?: ('left' | 'center' | 'right') | null;
+        size?: ('small' | 'medium' | 'large') | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'banner';
+      }
+    | {
+        title: string;
+        subtitle?: string | null;
+        backgroundImage?: (string | null) | Media;
+        overlay?: ('none' | 'light' | 'dark') | null;
+        height?: ('small' | 'medium' | 'large' | 'fullscreen') | null;
+        buttons?:
+          | {
+              label: string;
+              url: string;
+              style?: ('primary' | 'secondary' | 'default') | null;
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'hero';
+      }
+    | {
+        columns?: ('single' | 'two') | null;
+        content: {
+          [k: string]: unknown;
+        }[];
+        secondColumn?:
+          | {
+              [k: string]: unknown;
+            }[]
+          | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'content';
+      }
+    | {
+        title?: string | null;
+        content: {
+          [k: string]: unknown;
+        }[];
+        image: string | Media;
+        imagePosition?: ('left' | 'right') | null;
+        backgroundColor?: ('white' | 'light' | 'dark') | null;
+        size?: ('small' | 'medium' | 'large') | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'textImageSection';
+      }
+    | {
+        title?: string | null;
+        content: {
+          [k: string]: unknown;
+        }[];
+        backgroundColor?: ('white' | 'light' | 'dark') | null;
+        hasPattern?: boolean | null;
+        maxWidth?: ('small' | 'medium' | 'large' | 'full') | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'fullWidthContent';
+      }
+    | {
+        title?: string | null;
+        description?: string | null;
+        images?:
+          | {
+              image: string | Media;
+              caption?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        layout?: ('grid' | 'masonry' | 'carousel') | null;
+        columns?: ('2' | '3' | '4') | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'gallery';
+      }
+    | {
+        title?: string | null;
+        description?: string | null;
+        cards?:
+          | {
+              title: string;
+              description: string;
+              image?: (string | null) | Media;
+              link?: {
+                url?: string | null;
+                label?: string | null;
+              };
+              id?: string | null;
+            }[]
+          | null;
+        layout?: ('grid' | 'horizontal') | null;
+        columns?: ('2' | '3' | '4') | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'cards';
+      }
+    | {
+        title?: string | null;
+        description?: string | null;
+        videoType?: ('youtube' | 'vimeo' | 'direct') | null;
+        /**
+         * Paste the full YouTube/Vimeo URL or just the video ID. All formats work:
+         * • Full URL: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+         * • Short URL: https://youtu.be/dQw4w9WgXcQ
+         * • Video ID only: dQw4w9WgXcQ
+         * • Vimeo: https://vimeo.com/123456789
+         */
+        videoId?: string | null;
+        /**
+         * Enter the direct video URL (MP4, WebM, etc.)
+         */
+        videoUrl?: string | null;
+        /**
+         * Custom thumbnail (optional - will use video platform default if not provided)
+         */
+        thumbnail?: (string | null) | Media;
+        aspectRatio?: ('16:9' | '4:3' | '1:1') | null;
+        /**
+         * Note: Most browsers block autoplay with sound
+         */
+        autoplay?: boolean | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'video';
+      }
+  )[];
+  richText: {
+    [k: string]: unknown;
+  }[];
+  updatedAt: string;
+  createdAt: string;
+  _status?: ('draft' | 'published') | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "media".
+ */
+export interface Media {
+  id: string;
+  alt: string;
+  updatedAt: string;
+  createdAt: string;
+  url?: string | null;
+  thumbnailURL?: string | null;
+  filename?: string | null;
+  mimeType?: string | null;
+  filesize?: number | null;
+  width?: number | null;
+  height?: number | null;
+  focalX?: number | null;
+  focalY?: number | null;
+  sizes?: {
+    thumbnail?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    mobile?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    tablet?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+    desktop?: {
+      url?: string | null;
+      width?: number | null;
+      height?: number | null;
+      mimeType?: string | null;
+      filesize?: number | null;
+      filename?: string | null;
+    };
+  };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "posts".
+ */
+export interface Post {
+  id: string;
+  title: string;
+  slug?: string | null;
+  excerpt: string;
+  featuredImage: string | Media;
+  author: string | User;
+  publishedAt: string;
+  tags?: string[] | null;
   richText: {
     [k: string]: unknown;
   }[];
@@ -151,6 +370,19 @@ export interface User {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "categories".
+ */
+export interface Category {
+  id: string;
+  name: string;
+  slug?: string | null;
+  description?: string | null;
+  color?: string | null;
+  updatedAt: string;
+  createdAt: string;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "payload-locked-documents".
  */
 export interface PayloadLockedDocument {
@@ -159,6 +391,18 @@ export interface PayloadLockedDocument {
     | ({
         relationTo: 'pages';
         value: string | Page;
+      } | null)
+    | ({
+        relationTo: 'posts';
+        value: string | Post;
+      } | null)
+    | ({
+        relationTo: 'media';
+        value: string | Media;
+      } | null)
+    | ({
+        relationTo: 'categories';
+        value: string | Category;
       } | null)
     | ({
         relationTo: 'users';
@@ -213,10 +457,223 @@ export interface PayloadMigration {
 export interface PagesSelect<T extends boolean = true> {
   title?: T;
   slug?: T;
+  layout?:
+    | T
+    | {
+        banner?:
+          | T
+          | {
+              title?: T;
+              subtitle?: T;
+              content?: T;
+              backgroundColor?: T;
+              textAlign?: T;
+              size?: T;
+              id?: T;
+              blockName?: T;
+            };
+        hero?:
+          | T
+          | {
+              title?: T;
+              subtitle?: T;
+              backgroundImage?: T;
+              overlay?: T;
+              height?: T;
+              buttons?:
+                | T
+                | {
+                    label?: T;
+                    url?: T;
+                    style?: T;
+                    id?: T;
+                  };
+              id?: T;
+              blockName?: T;
+            };
+        content?:
+          | T
+          | {
+              columns?: T;
+              content?: T;
+              secondColumn?: T;
+              id?: T;
+              blockName?: T;
+            };
+        textImageSection?:
+          | T
+          | {
+              title?: T;
+              content?: T;
+              image?: T;
+              imagePosition?: T;
+              backgroundColor?: T;
+              size?: T;
+              id?: T;
+              blockName?: T;
+            };
+        fullWidthContent?:
+          | T
+          | {
+              title?: T;
+              content?: T;
+              backgroundColor?: T;
+              hasPattern?: T;
+              maxWidth?: T;
+              id?: T;
+              blockName?: T;
+            };
+        gallery?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+              images?:
+                | T
+                | {
+                    image?: T;
+                    caption?: T;
+                    id?: T;
+                  };
+              layout?: T;
+              columns?: T;
+              id?: T;
+              blockName?: T;
+            };
+        cards?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+              cards?:
+                | T
+                | {
+                    title?: T;
+                    description?: T;
+                    image?: T;
+                    link?:
+                      | T
+                      | {
+                          url?: T;
+                          label?: T;
+                        };
+                    id?: T;
+                  };
+              layout?: T;
+              columns?: T;
+              id?: T;
+              blockName?: T;
+            };
+        video?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+              videoType?: T;
+              videoId?: T;
+              videoUrl?: T;
+              thumbnail?: T;
+              aspectRatio?: T;
+              autoplay?: T;
+              id?: T;
+              blockName?: T;
+            };
+      };
   richText?: T;
   updatedAt?: T;
   createdAt?: T;
   _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "posts_select".
+ */
+export interface PostsSelect<T extends boolean = true> {
+  title?: T;
+  slug?: T;
+  excerpt?: T;
+  featuredImage?: T;
+  author?: T;
+  publishedAt?: T;
+  tags?: T;
+  richText?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  _status?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "media_select".
+ */
+export interface MediaSelect<T extends boolean = true> {
+  alt?: T;
+  updatedAt?: T;
+  createdAt?: T;
+  url?: T;
+  thumbnailURL?: T;
+  filename?: T;
+  mimeType?: T;
+  filesize?: T;
+  width?: T;
+  height?: T;
+  focalX?: T;
+  focalY?: T;
+  sizes?:
+    | T
+    | {
+        thumbnail?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        mobile?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        tablet?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+        desktop?:
+          | T
+          | {
+              url?: T;
+              width?: T;
+              height?: T;
+              mimeType?: T;
+              filesize?: T;
+              filename?: T;
+            };
+      };
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "categories_select".
+ */
+export interface CategoriesSelect<T extends boolean = true> {
+  name?: T;
+  slug?: T;
+  description?: T;
+  color?: T;
+  updatedAt?: T;
+  createdAt?: T;
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
@@ -291,6 +748,82 @@ export interface MainMenu {
 }
 /**
  * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "footer".
+ */
+export interface Footer {
+  id: string;
+  companyInfo: {
+    name: string;
+    logo?: (string | null) | Media;
+    description: {
+      [k: string]: unknown;
+    }[];
+  };
+  contactInfo?: {
+    email?: string | null;
+    phone?: string | null;
+    address?: string | null;
+  };
+  footerLinks?:
+    | {
+        title: string;
+        links?:
+          | {
+              link: {
+                type?: ('reference' | 'custom') | null;
+                newTab?: boolean | null;
+                reference?: {
+                  relationTo: 'pages';
+                  value: string | Page;
+                } | null;
+                url?: string | null;
+                label: string;
+              };
+              id?: string | null;
+            }[]
+          | null;
+        id?: string | null;
+      }[]
+    | null;
+  socialMedia?:
+    | {
+        platform: 'facebook' | 'twitter' | 'instagram' | 'linkedin' | 'youtube' | 'tiktok' | 'other';
+        customPlatform?: string | null;
+        url: string;
+        id?: string | null;
+      }[]
+    | null;
+  bottomSection: {
+    copyrightText: {
+      [k: string]: unknown;
+    }[];
+    legalLinks?:
+      | {
+          link: {
+            type?: ('reference' | 'custom') | null;
+            newTab?: boolean | null;
+            reference?: {
+              relationTo: 'pages';
+              value: string | Page;
+            } | null;
+            url?: string | null;
+            label: string;
+          };
+          id?: string | null;
+        }[]
+      | null;
+  };
+  newsletter?: {
+    enabled?: boolean | null;
+    title?: string | null;
+    description?: string | null;
+    placeholder?: string | null;
+  };
+  updatedAt?: string | null;
+  createdAt?: string | null;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
  * via the `definition` "main-menu_select".
  */
 export interface MainMenuSelect<T extends boolean = true> {
@@ -307,6 +840,84 @@ export interface MainMenuSelect<T extends boolean = true> {
               label?: T;
             };
         id?: T;
+      };
+  updatedAt?: T;
+  createdAt?: T;
+  globalType?: T;
+}
+/**
+ * This interface was referenced by `Config`'s JSON-Schema
+ * via the `definition` "footer_select".
+ */
+export interface FooterSelect<T extends boolean = true> {
+  companyInfo?:
+    | T
+    | {
+        name?: T;
+        logo?: T;
+        description?: T;
+      };
+  contactInfo?:
+    | T
+    | {
+        email?: T;
+        phone?: T;
+        address?: T;
+      };
+  footerLinks?:
+    | T
+    | {
+        title?: T;
+        links?:
+          | T
+          | {
+              link?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    reference?: T;
+                    url?: T;
+                    label?: T;
+                  };
+              id?: T;
+            };
+        id?: T;
+      };
+  socialMedia?:
+    | T
+    | {
+        platform?: T;
+        customPlatform?: T;
+        url?: T;
+        id?: T;
+      };
+  bottomSection?:
+    | T
+    | {
+        copyrightText?: T;
+        legalLinks?:
+          | T
+          | {
+              link?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    reference?: T;
+                    url?: T;
+                    label?: T;
+                  };
+              id?: T;
+            };
+      };
+  newsletter?:
+    | T
+    | {
+        enabled?: T;
+        title?: T;
+        description?: T;
+        placeholder?: T;
       };
   updatedAt?: T;
   createdAt?: T;
