@@ -7,6 +7,9 @@ import { DefaultDocumentIDType } from 'payload';
 
 export const home = (id: DefaultDocumentIDType): Partial<Page> => ({
 	slug: 'home',
+	pageType: 'landing',
+	navigationOrder: 0,
+	hideFromNavigation: false,
 	layout: [
 		{
 			blockType: 'content',
@@ -82,6 +85,9 @@ export const home = (id: DefaultDocumentIDType): Partial<Page> => ({
 
 export const examplePage: Partial<Page> = {
 	slug: 'example-page',
+	pageType: 'content',
+	navigationOrder: 20,
+	hideFromNavigation: false,
 	layout: [
 		{
 			blockType: 'content',
@@ -122,6 +128,9 @@ export const demoPage = (
 	secondImageId?: string,
 ): Partial<Page> => ({
 	slug: 'demo-page',
+	pageType: 'destination',
+	navigationOrder: 10,
+	hideFromNavigation: false,
 	layout: [
 		{
 			blockType: 'banner',
@@ -355,49 +364,14 @@ export async function up({ payload }: MigrateUpArgs): Promise<void> {
 	await payload.updateGlobal({
 		slug: 'main-menu',
 		data: {
-			navItems: [
-				{
-					link: {
-						type: 'reference',
-						label: 'Home',
-						reference: {
-							relationTo: 'pages',
-							value: homePageID,
-						},
-						url: '',
-					},
-				},
-				{
-					link: {
-						type: 'reference',
-						label: 'Démonstration',
-						reference: {
-							relationTo: 'pages',
-							value: demoPageID,
-						},
-						url: '',
-					},
-				},
-				{
-					link: {
-						type: 'reference',
-						label: 'Example',
-						reference: {
-							relationTo: 'pages',
-							value: examplePageID,
-						},
-						url: '',
-					},
-				},
-				{
-					link: {
-						type: 'custom',
-						label: 'Dashboard',
-						reference: undefined,
-						url: '/admin',
-					},
-				},
-			],
+			autoPopulate: true,
+			includePageTypes: ['landing', 'destination', 'content'],
+			maxDepth: 3,
+			displaySettings: {
+				showPageTypes: false,
+				showNavigationOrder: false,
+				highlightActiveParents: true,
+			},
 		},
 	});
 

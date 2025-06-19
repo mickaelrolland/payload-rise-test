@@ -132,7 +132,27 @@ export interface UserAuthOperations {
 export interface Page {
   id: string;
   title: string;
+  /**
+   * Select the type of page to organize your navigation hierarchy
+   */
+  pageType: 'landing' | 'destination' | 'content' | 'experience';
+  /**
+   * Select a parent page to create hierarchy. Leave empty for top-level pages.
+   */
+  parent?: (string | null) | Page;
+  /**
+   * Order in navigation menu (lower numbers appear first)
+   */
+  navigationOrder?: number | null;
+  /**
+   * Hide this page from navigation menus
+   */
+  hideFromNavigation?: boolean | null;
   slug?: string | null;
+  /**
+   * SEO meta description
+   */
+  metaDescription?: string | null;
   layout: (
     | {
         title: string;
@@ -456,7 +476,12 @@ export interface PayloadMigration {
  */
 export interface PagesSelect<T extends boolean = true> {
   title?: T;
+  pageType?: T;
+  parent?: T;
+  navigationOrder?: T;
+  hideFromNavigation?: T;
   slug?: T;
+  metaDescription?: T;
   layout?:
     | T
     | {
@@ -728,21 +753,74 @@ export interface PayloadMigrationsSelect<T extends boolean = true> {
  */
 export interface MainMenu {
   id: string;
-  navItems?:
+  /**
+   * Automatically populate navigation from page hierarchy
+   */
+  autoPopulate?: boolean | null;
+  /**
+   * Which page types to include in auto-populated navigation
+   */
+  includePageTypes?: ('landing' | 'destination' | 'content' | 'experience')[] | null;
+  /**
+   * Maximum hierarchy depth to display (1-5 levels)
+   */
+  maxDepth?: number | null;
+  /**
+   * Manual navigation configuration (used when auto-populate is disabled)
+   */
+  customNavItems?:
     | {
-        link: {
-          type?: ('reference' | 'custom') | null;
-          newTab?: boolean | null;
-          reference?: {
-            relationTo: 'pages';
-            value: string | Page;
-          } | null;
-          url?: string | null;
-          label: string;
+        navigationGroup: {
+          /**
+           * Optional group title for organizing navigation items
+           */
+          groupTitle?: string | null;
+          link: {
+            type?: ('reference' | 'custom') | null;
+            newTab?: boolean | null;
+            reference?: {
+              relationTo: 'pages';
+              value: string | Page;
+            } | null;
+            url?: string | null;
+            label: string;
+          };
+          /**
+           * Sub-navigation items under this main item
+           */
+          children?:
+            | {
+                link: {
+                  type?: ('reference' | 'custom') | null;
+                  newTab?: boolean | null;
+                  reference?: {
+                    relationTo: 'pages';
+                    value: string | Page;
+                  } | null;
+                  url?: string | null;
+                  label: string;
+                };
+                id?: string | null;
+              }[]
+            | null;
         };
         id?: string | null;
       }[]
     | null;
+  displaySettings?: {
+    /**
+     * Display page type indicators in navigation
+     */
+    showPageTypes?: boolean | null;
+    /**
+     * Display navigation order numbers
+     */
+    showNavigationOrder?: boolean | null;
+    /**
+     * Highlight parent pages when child pages are active
+     */
+    highlightActiveParents?: boolean | null;
+  };
   updatedAt?: string | null;
   createdAt?: string | null;
 }
@@ -827,19 +905,48 @@ export interface Footer {
  * via the `definition` "main-menu_select".
  */
 export interface MainMenuSelect<T extends boolean = true> {
-  navItems?:
+  autoPopulate?: T;
+  includePageTypes?: T;
+  maxDepth?: T;
+  customNavItems?:
     | T
     | {
-        link?:
+        navigationGroup?:
           | T
           | {
-              type?: T;
-              newTab?: T;
-              reference?: T;
-              url?: T;
-              label?: T;
+              groupTitle?: T;
+              link?:
+                | T
+                | {
+                    type?: T;
+                    newTab?: T;
+                    reference?: T;
+                    url?: T;
+                    label?: T;
+                  };
+              children?:
+                | T
+                | {
+                    link?:
+                      | T
+                      | {
+                          type?: T;
+                          newTab?: T;
+                          reference?: T;
+                          url?: T;
+                          label?: T;
+                        };
+                    id?: T;
+                  };
             };
         id?: T;
+      };
+  displaySettings?:
+    | T
+    | {
+        showPageTypes?: T;
+        showNavigationOrder?: T;
+        highlightActiveParents?: T;
       };
   updatedAt?: T;
   createdAt?: T;

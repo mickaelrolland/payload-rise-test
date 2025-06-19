@@ -23,7 +23,8 @@ export const Pages: CollectionConfig = {
 		update: loggedIn,
 	},
 	admin: {
-		defaultColumns: ['title', 'slug', 'updatedAt'],
+		defaultColumns: ['title', 'pageType', 'parent', 'slug', 'updatedAt'],
+		listSearchableFields: ['title', 'slug', 'pageType'],
 		livePreview: {
 			url: ({ data }) => {
 				const isHomePage = data.slug === 'home';
@@ -39,6 +40,58 @@ export const Pages: CollectionConfig = {
 			required: true,
 		},
 		{
+			name: 'pageType',
+			type: 'select',
+			options: [
+				{ label: 'Landing Page', value: 'landing' },
+				{ label: 'Destination Hub', value: 'destination' },
+				{ label: 'Content Page', value: 'content' },
+				{ label: 'Experience Page', value: 'experience' },
+			],
+			required: true,
+			admin: {
+				position: 'sidebar',
+				description:
+					'Select the type of page to organize your navigation hierarchy',
+			},
+		},
+		{
+			name: 'parent',
+			type: 'relationship',
+			relationTo: 'pages',
+			filterOptions: ({ data }) => {
+				// Prevent circular references and self-selection
+				return {
+					id: { not_equals: data?.id },
+					pageType: { in: ['landing', 'destination'] },
+				};
+			},
+			admin: {
+				position: 'sidebar',
+				description:
+					'Select a parent page to create hierarchy. Leave empty for top-level pages.',
+			},
+		},
+		{
+			name: 'navigationOrder',
+			type: 'number',
+			admin: {
+				position: 'sidebar',
+				description:
+					'Order in navigation menu (lower numbers appear first)',
+			},
+			defaultValue: 0,
+		},
+		{
+			name: 'hideFromNavigation',
+			type: 'checkbox',
+			admin: {
+				position: 'sidebar',
+				description: 'Hide this page from navigation menus',
+			},
+			defaultValue: false,
+		},
+		{
 			name: 'slug',
 			type: 'text',
 			admin: {
@@ -49,6 +102,14 @@ export const Pages: CollectionConfig = {
 			},
 			index: true,
 			label: 'Slug',
+		},
+		{
+			name: 'metaDescription',
+			type: 'text',
+			admin: {
+				position: 'sidebar',
+				description: 'SEO meta description',
+			},
 		},
 		{
 			name: 'layout',

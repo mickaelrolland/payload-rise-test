@@ -18,6 +18,14 @@ const dirname = path.dirname(filename);
 // eslint-disable-next-line no-restricted-exports
 export default buildConfig({
 	admin: {
+		components: {
+			views: {
+				dashboard: {
+					Component: '/src/components/admin/Dashboard#default',
+					path: '/admin',
+				},
+			},
+		},
 		livePreview: {
 			breakpoints: [
 				{
@@ -27,6 +35,9 @@ export default buildConfig({
 					width: 375,
 				},
 			],
+		},
+		meta: {
+			titleSuffix: '- Navigation CMS',
 		},
 	},
 	collections: [Pages, Posts, Media, Categories, Users],

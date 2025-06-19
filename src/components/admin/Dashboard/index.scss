@@ -1,0 +1,164 @@
+.admin-dashboard {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px;
+
+	.dashboard-header {
+		margin-bottom: 30px;
+		text-align: center;
+		padding: 20px 0;
+		border-bottom: 1px solid #e9ecef;
+
+		h1 {
+			margin: 0 0 10px 0;
+			color: #a8a8a8;
+			font-size: 32px;
+			font-weight: 700;
+		}
+
+		p {
+			margin: 0;
+			color: #a8a8a8;
+			font-size: 16px;
+		}
+	}
+
+	.dashboard-content {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+
+		.dashboard-section {
+			.section-header {
+				margin-bottom: 20px;
+
+				h3 {
+					margin: 0 0 8px 0;
+					color: #a8a8a8;
+					font-size: 22px;
+					font-weight: 600;
+				}
+
+				p {
+					margin: 0;
+					color: #a8a8a8;
+					font-size: 14px;
+				}
+			}
+
+			.quick-actions {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+				gap: 20px;
+
+				.action-card {
+					display: flex;
+					align-items: center;
+					gap: 15px;
+					padding: 20px;
+					background: white;
+					border: 1px solid #e9ecef;
+					border-radius: 8px;
+					text-decoration: none;
+					transition: all 0.2s ease;
+					color: inherit;
+
+					&:hover {
+						border-color: #007bff;
+						box-shadow: 0 2px 8px rgba(0, 123, 255, 0.1);
+						transform: translateY(-2px);
+					}
+
+					.action-icon {
+						font-size: 32px;
+						min-width: 48px;
+						text-align: center;
+					}
+
+					.action-content {
+						flex: 1;
+
+						h4 {
+							margin: 0 0 5px 0;
+							color: #a8a8a8;
+							font-size: 16px;
+							font-weight: 600;
+						}
+
+						p {
+							margin: 0;
+							color: #a8a8a8;
+							font-size: 14px;
+							line-height: 1.4;
+						}
+					}
+				}
+			}
+
+			.guidelines {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+				gap: 20px;
+
+				.guideline-item {
+					display: flex;
+					gap: 15px;
+					padding: 20px;
+					background: white;
+					border: 1px solid #e9ecef;
+					border-radius: 8px;
+
+					.guideline-icon {
+						font-size: 24px;
+						min-width: 32px;
+						text-align: center;
+					}
+
+					.guideline-content {
+						flex: 1;
+
+						h4 {
+							margin: 0 0 8px 0;
+							color: #a8a8a8;
+							font-size: 16px;
+							font-weight: 600;
+						}
+
+						p {
+							margin: 0;
+							color: #a8a8a8;
+							font-size: 14px;
+							line-height: 1.5;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 768px) {
+	.admin-dashboard {
+		padding: 15px;
+
+		.dashboard-header {
+			h1 {
+				font-size: 28px;
+			}
+		}
+
+		.dashboard-content {
+			gap: 20px;
+
+			.dashboard-section {
+				.quick-actions {
+					grid-template-columns: 1fr;
+				}
+
+				.guidelines {
+					grid-template-columns: 1fr;
+				}
+			}
+		}
+	}
+}
