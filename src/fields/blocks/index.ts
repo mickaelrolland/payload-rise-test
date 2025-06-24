@@ -4,5 +4,6 @@ export { Content } from './Content';
 export { FullWidthContent } from './FullWidthContent';
 export { Gallery } from './Gallery';
 export { Hero } from './Hero';
+export { Testimonials } from './Testimonials';
 export { TextImageSection } from './TextImageSection';
 export { Video } from './Video';

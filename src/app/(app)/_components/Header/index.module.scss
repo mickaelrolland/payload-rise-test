@@ -3,8 +3,8 @@
 	top: 0;
 	z-index: 100;
 	background: white;
-	border-bottom: 1px solid #e9ecef;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	border-bottom: 1px solid #e5e5e5;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .wrap {
@@ -13,24 +13,38 @@
 	justify-content: space-between;
 	padding: 1rem 0;
 	position: relative;
+	max-width: 1400px;
+	margin: 0 auto;
 }
 
 .logo {
 	flex-shrink: 0;
 	text-decoration: none;
-
-	img {
-		height: 30px;
-		width: auto;
-	}
+	margin-right: 3rem;
 }
 
-.nav {
+.logoText {
+	font-size: 24px;
+	font-weight: 600;
+	color: #333;
+	letter-spacing: -0.5px;
+}
+
+.mainNav {
 	flex: 1;
 	display: flex;
 	justify-content: center;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1024px) {
+		display: none;
+	}
+}
+
+.utilityNav {
+	flex-shrink: 0;
+	margin-left: 3rem;
+
+	@media (max-width: 1024px) {
 		display: none;
 	}
 }
@@ -40,21 +54,21 @@
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	gap: 2rem;
+	gap: 2.5rem;
 
 	&.level-0 {
 		align-items: center;
 	}
 
-	&.level-1,
-	&.level-2 {
+	&.level-1 {
 		flex-direction: column;
 		gap: 0;
 		background: white;
-		border: 1px solid #e9ecef;
-		border-radius: 6px;
-		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-		min-width: 200px;
+		border: 1px solid #e5e5e5;
+		border-radius: 8px;
+		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+		min-width: 220px;
+		padding: 0.5rem 0;
 	}
 }
 
@@ -62,13 +76,8 @@
 	position: relative;
 
 	&.active > .navLink {
-		color: #007bff;
+		color: #333;
 		font-weight: 600;
-	}
-
-	&.activeParent > .navLink {
-		color: #0056b3;
-		font-weight: 500;
 	}
 
 	&:hover {
@@ -79,21 +88,7 @@
 		}
 	}
 
-	// Level-specific styles
-	.level-0 > & {
-		&:hover > .navLink {
-			color: #007bff;
-		}
-	}
-
-	.level-1 > &,
-	.level-2 > & {
-		border-bottom: 1px solid #f1f3f4;
-
-		&:last-child {
-			border-bottom: none;
-		}
-
+	.level-1 & {
 		&:hover {
 			background-color: #f8f9fa;
 		}
@@ -105,16 +100,17 @@
 	align-items: center;
 	text-decoration: none;
 	color: #333;
-	font-size: 16px;
-	font-weight: 500;
+	font-size: 15px;
+	font-weight: 400;
 	transition: color 0.2s ease;
 	padding: 0.5rem 0;
+	white-space: nowrap;
 
-	.level-1 &,
-	.level-2 & {
-		padding: 0.75rem 1rem;
+	.level-1 & {
+		padding: 0.75rem 1.5rem;
 		font-size: 14px;
 		width: 100%;
+		color: #666;
 	}
 
 	&.hasChildren {
@@ -122,39 +118,79 @@
 	}
 
 	&:hover {
-		color: #007bff;
+		color: #000;
 	}
 }
 
 .dropdownIndicator {
-	font-size: 12px;
+	font-size: 10px;
 	transition: transform 0.2s ease;
+	margin-left: 0.5rem;
+}
 
-	.navItem:hover & {
-		transform: rotate(180deg);
-	}
+.dropdownHeader {
+	padding: 0.75rem 1.5rem;
+	font-size: 12px;
+	font-weight: 600;
+	color: #999;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	border-bottom: 1px solid #f0f0f0;
+	margin-bottom: 0.25rem;
 }
 
 .dropdown {
 	position: absolute;
 	top: 100%;
-	left: 0;
+	left: 50%;
+	transform: translateX(-50%) translateY(-10px);
 	z-index: 1000;
 	opacity: 0;
 	visibility: hidden;
-	transform: translateY(-10px);
 	transition: all 0.2s ease;
+	margin-top: 1rem;
 
-	.level-0 > .navItem > & {
-		margin-top: 0.5rem;
+	.navItem:hover & {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(-50%) translateY(0);
 	}
+}
 
-	.level-1 > .navItem > &,
-	.level-2 > .navItem > & {
-		left: 100%;
-		top: 0;
-		margin-left: 0.5rem;
+.utilityList {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	gap: 1.5rem;
+	align-items: center;
+}
+
+.utilityItem {
+	// No additional styles needed
+}
+
+.utilityLink {
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #666;
+	font-size: 13px;
+	font-weight: 400;
+	transition: color 0.2s ease;
+	gap: 0.5rem;
+
+	&:hover {
+		color: #333;
 	}
+}
+
+.utilityIcon {
+	font-size: 14px;
+}
+
+.utilityText {
+	white-space: nowrap;
 }
 
 .mobileMenuToggle {
@@ -166,7 +202,7 @@
 	padding: 0.5rem;
 	gap: 4px;
 
-	@media (max-width: 768px) {
+	@media (max-width: 1024px) {
 		display: flex;
 	}
 
@@ -186,7 +222,7 @@
 	}
 
 	&:hover span {
-		background: #007bff;
+		background: #000;
 	}
 
 	// Animation for mobile menu toggle
@@ -206,14 +242,22 @@
 }
 
 // Mobile navigation styles
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
+	.wrap {
+		padding: 1rem;
+	}
+
+	.logo {
+		margin-right: 0;
+	}
+
 	.nav {
 		position: absolute;
 		top: 100%;
 		left: 0;
 		right: 0;
 		background: white;
-		border-top: 1px solid #e9ecef;
+		border-top: 1px solid #e5e5e5;
 		box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 		transform: translateY(-100%);
 		opacity: 0;
@@ -290,7 +334,8 @@
 		border-bottom-width: 2px;
 	}
 
-	.navLink {
+	.navLink,
+	.utilityLink {
 		&:hover,
 		&:focus {
 			outline: 2px solid currentColor;

@@ -1,0 +1,165 @@
+.testimonials {
+	padding: 4rem 0;
+
+	&--white {
+		background-color: #ffffff;
+		color: #333;
+	}
+
+	&--light {
+		background-color: #f8f9fa;
+		color: #333;
+	}
+
+	&--dark {
+		background-color: #1a1a1a;
+		color: #ffffff;
+	}
+}
+
+.title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+.description {
+	font-size: 1.125rem;
+	margin-bottom: 3rem;
+	text-align: center;
+	opacity: 0.8;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.testimonialsGrid {
+	display: grid;
+	gap: 2rem;
+
+	&--grid {
+		&.testimonialsGrid--2cols {
+			grid-template-columns: repeat(2, 1fr);
+
+			@media (max-width: 768px) {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		&.testimonialsGrid--3cols {
+			grid-template-columns: repeat(3, 1fr);
+
+			@media (max-width: 992px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@media (max-width: 576px) {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		&.testimonialsGrid--4cols {
+			grid-template-columns: repeat(4, 1fr);
+
+			@media (max-width: 1200px) {
+				grid-template-columns: repeat(3, 1fr);
+			}
+
+			@media (max-width: 768px) {
+				grid-template-columns: repeat(2, 1fr);
+			}
+
+			@media (max-width: 576px) {
+				grid-template-columns: 1fr;
+			}
+		}
+	}
+
+	&--horizontal {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+.testimonial {
+	text-align: center;
+	padding: 1.5rem;
+	border-radius: 8px;
+	transition: transform 0.3s ease;
+
+	&:hover {
+		transform: translateY(-4px);
+	}
+}
+
+.testimonialImage {
+	margin-bottom: 1.5rem;
+
+	.image {
+		width: 80px;
+		height: 80px;
+		border-radius: 50%;
+		object-fit: cover;
+		margin: 0 auto;
+		display: block;
+	}
+}
+
+.testimonialContent {
+	.testimonialName {
+		font-size: 1.25rem;
+		font-weight: 600;
+		margin-bottom: 0.5rem;
+		color: inherit;
+	}
+
+	.testimonialRole {
+		font-size: 0.875rem;
+		opacity: 0.7;
+		margin-bottom: 1rem;
+		text-transform: uppercase;
+		letter-spacing: 0.5px;
+	}
+
+	.testimonialText {
+		font-size: 1rem;
+		line-height: 1.6;
+		font-style: italic;
+		opacity: 0.9;
+		margin: 0;
+
+		&::before {
+			content: '"';
+			font-size: 1.5rem;
+			opacity: 0.5;
+		}
+
+		&::after {
+			content: '"';
+			font-size: 1.5rem;
+			opacity: 0.5;
+		}
+	}
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+	.testimonials {
+		padding: 3rem 0;
+	}
+
+	.title {
+		font-size: 2rem;
+	}
+
+	.testimonial {
+		padding: 1rem;
+	}
+
+	.testimonialImage .image {
+		width: 60px;
+		height: 60px;
+	}
+}

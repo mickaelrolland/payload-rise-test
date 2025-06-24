@@ -39,7 +39,6 @@ export const Hero: React.FC<Props> = ({
 					alt={backgroundImage?.alt || title}
 					className={classes.backgroundImage}
 					fill
-					priority
 					resource={backgroundImage}
 				/>
 				{overlay !== 'none' && (

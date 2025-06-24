@@ -7,8 +7,7 @@ import type { Page as PageType } from '../../../payload-types';
 import config from '../../../payload.config';
 import { Blocks } from '../_components/Blocks';
 import { Gutter } from '../_components/Gutter';
-import RichText from '../_components/RichText';
-import classes from './index.module.scss';
+import { RichText } from '../_components/RichText';
 import { RefreshRouteOnSave } from './RefreshRouteOnSave';
 
 interface PageParams {
@@ -42,7 +41,7 @@ export default async function Page({ params: paramsPromise }: PageParams) {
 	return (
 		<Fragment>
 			<RefreshRouteOnSave />
-			<main className={classes.page}>
+			<main>
 				{data?.layout && <Blocks blocks={data.layout} />}
 				<Gutter>
 					<RichText content={data?.richText} />

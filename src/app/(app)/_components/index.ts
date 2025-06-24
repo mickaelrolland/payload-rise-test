@@ -11,6 +11,7 @@ export { Gutter } from './Gutter';
 export { Header } from './Header';
 export { Hero } from './Hero';
 export { Image } from './Image';
-export { default as RichText } from './RichText';
+export { RichText } from './RichText';
+export { Testimonials } from './Testimonials';
 export { TextImageSection } from './TextImageSection';
 export { Video } from './Video';

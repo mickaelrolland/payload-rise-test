@@ -7,6 +7,7 @@ import {
 	FullWidthContent,
 	Gallery,
 	Hero,
+	Testimonials,
 	TextImageSection,
 	Video,
 } from '../../fields/blocks';
@@ -43,16 +44,39 @@ export const Pages: CollectionConfig = {
 			name: 'pageType',
 			type: 'select',
 			options: [
-				{ label: 'Landing Page', value: 'landing' },
-				{ label: 'Destination Hub', value: 'destination' },
+				{ label: 'Home Page', value: 'home' },
+				{ label: 'Landing Page (Destinations)', value: 'destination' },
+				{ label: 'Landing Page (Experiences)', value: 'experience' },
+				{ label: 'Landing Page (Contact)', value: 'contact' },
+				{ label: 'Destination Hub', value: 'destination-hub' },
+				{ label: 'Experience Hub', value: 'experience-hub' },
 				{ label: 'Content Page', value: 'content' },
-				{ label: 'Experience Page', value: 'experience' },
+				{ label: 'Gallery Page', value: 'gallery' },
+				{ label: 'Service Page', value: 'service' },
+				{ label: 'Location Page', value: 'location' },
 			],
 			required: true,
 			admin: {
 				position: 'sidebar',
 				description:
 					'Select the type of page to organize your navigation hierarchy',
+			},
+		},
+		{
+			name: 'navigationGroup',
+			type: 'select',
+			options: [
+				{ label: 'Main Navigation', value: 'main' },
+				{ label: 'Destinations', value: 'destinations' },
+				{ label: 'Experiences', value: 'experiences' },
+				{ label: 'Contact', value: 'contact' },
+				{ label: 'Footer Only', value: 'footer' },
+				{ label: 'Hidden', value: 'hidden' },
+			],
+			defaultValue: 'main',
+			admin: {
+				position: 'sidebar',
+				description: 'Which navigation group this page belongs to',
 			},
 		},
 		{
@@ -63,7 +87,16 @@ export const Pages: CollectionConfig = {
 				// Prevent circular references and self-selection
 				return {
 					id: { not_equals: data?.id },
-					pageType: { in: ['landing', 'destination'] },
+					pageType: {
+						in: [
+							'home',
+							'destination',
+							'experience',
+							'contact',
+							'destination-hub',
+							'experience-hub',
+						],
+					},
 				};
 			},
 			admin: {
@@ -90,6 +123,54 @@ export const Pages: CollectionConfig = {
 				description: 'Hide this page from navigation menus',
 			},
 			defaultValue: false,
+		},
+		{
+			name: 'navigationSettings',
+			type: 'group',
+			admin: {
+				position: 'sidebar',
+			},
+			fields: [
+				{
+					name: 'customNavigationTitle',
+					type: 'text',
+					admin: {
+						description:
+							'Override title shown in navigation (leave empty to use page title)',
+					},
+				},
+				{
+					name: 'showInBreadcrumbs',
+					type: 'checkbox',
+					defaultValue: true,
+					admin: {
+						description: 'Show this page in breadcrumb navigation',
+					},
+				},
+				{
+					name: 'headerStyle',
+					type: 'select',
+					options: [
+						{ label: 'Default Header', value: 'default' },
+						{ label: 'Destinations Header', value: 'destinations' },
+						{ label: 'Experiences Header', value: 'experiences' },
+						{ label: 'Contact Header', value: 'contact' },
+						{ label: 'Minimal Header', value: 'minimal' },
+					],
+					defaultValue: 'default',
+					admin: {
+						description: 'Choose the header style for this page',
+					},
+				},
+				{
+					name: 'navigationIcon',
+					type: 'text',
+					admin: {
+						description:
+							'Optional icon/emoji for navigation display',
+					},
+				},
+			],
 		},
 		{
 			name: 'slug',
@@ -122,11 +203,12 @@ export const Pages: CollectionConfig = {
 				FullWidthContent,
 				Gallery,
 				Card,
+				Testimonials,
 				Video,
 			],
 			required: true,
 		},
-		richText(),
+		richText({ required: false }),
 	],
 	versions: {
 		drafts: {

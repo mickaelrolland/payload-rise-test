@@ -135,7 +135,21 @@ export interface Page {
   /**
    * Select the type of page to organize your navigation hierarchy
    */
-  pageType: 'landing' | 'destination' | 'content' | 'experience';
+  pageType:
+    | 'home'
+    | 'destination'
+    | 'experience'
+    | 'contact'
+    | 'destination-hub'
+    | 'experience-hub'
+    | 'content'
+    | 'gallery'
+    | 'service'
+    | 'location';
+  /**
+   * Which navigation group this page belongs to
+   */
+  navigationGroup?: ('main' | 'destinations' | 'experiences' | 'contact' | 'footer' | 'hidden') | null;
   /**
    * Select a parent page to create hierarchy. Leave empty for top-level pages.
    */
@@ -148,6 +162,24 @@ export interface Page {
    * Hide this page from navigation menus
    */
   hideFromNavigation?: boolean | null;
+  navigationSettings?: {
+    /**
+     * Override title shown in navigation (leave empty to use page title)
+     */
+    customNavigationTitle?: string | null;
+    /**
+     * Show this page in breadcrumb navigation
+     */
+    showInBreadcrumbs?: boolean | null;
+    /**
+     * Choose the header style for this page
+     */
+    headerStyle?: ('default' | 'destinations' | 'experiences' | 'contact' | 'minimal') | null;
+    /**
+     * Optional icon/emoji for navigation display
+     */
+    navigationIcon?: string | null;
+  };
   slug?: string | null;
   /**
    * SEO meta description
@@ -264,6 +296,25 @@ export interface Page {
     | {
         title?: string | null;
         description?: string | null;
+        testimonials?:
+          | {
+              name: string;
+              role: string;
+              image?: (string | null) | Media;
+              testimonial?: string | null;
+              id?: string | null;
+            }[]
+          | null;
+        layout?: ('grid' | 'horizontal') | null;
+        columns?: ('2' | '3' | '4') | null;
+        backgroundColor?: ('white' | 'light' | 'dark') | null;
+        id?: string | null;
+        blockName?: string | null;
+        blockType: 'testimonials';
+      }
+    | {
+        title?: string | null;
+        description?: string | null;
         videoType?: ('youtube' | 'vimeo' | 'direct') | null;
         /**
          * Paste the full YouTube/Vimeo URL or just the video ID. All formats work:
@@ -291,9 +342,11 @@ export interface Page {
         blockType: 'video';
       }
   )[];
-  richText: {
-    [k: string]: unknown;
-  }[];
+  richText?:
+    | {
+        [k: string]: unknown;
+      }[]
+    | null;
   updatedAt: string;
   createdAt: string;
   _status?: ('draft' | 'published') | null;
@@ -477,9 +530,18 @@ export interface PayloadMigration {
 export interface PagesSelect<T extends boolean = true> {
   title?: T;
   pageType?: T;
+  navigationGroup?: T;
   parent?: T;
   navigationOrder?: T;
   hideFromNavigation?: T;
+  navigationSettings?:
+    | T
+    | {
+        customNavigationTitle?: T;
+        showInBreadcrumbs?: T;
+        headerStyle?: T;
+        navigationIcon?: T;
+      };
   slug?: T;
   metaDescription?: T;
   layout?:
@@ -586,6 +648,26 @@ export interface PagesSelect<T extends boolean = true> {
                   };
               layout?: T;
               columns?: T;
+              id?: T;
+              blockName?: T;
+            };
+        testimonials?:
+          | T
+          | {
+              title?: T;
+              description?: T;
+              testimonials?:
+                | T
+                | {
+                    name?: T;
+                    role?: T;
+                    image?: T;
+                    testimonial?: T;
+                    id?: T;
+                  };
+              layout?: T;
+              columns?: T;
+              backgroundColor?: T;
               id?: T;
               blockName?: T;
             };

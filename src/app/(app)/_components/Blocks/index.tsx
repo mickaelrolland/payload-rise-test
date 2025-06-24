@@ -6,6 +6,7 @@ import { Content } from '../Content';
 import { FullWidthContent } from '../FullWidthContent';
 import { Gallery } from '../Gallery';
 import { Hero } from '../Hero';
+import { Testimonials } from '../Testimonials';
 import { TextImageSection } from '../TextImageSection';
 import { Video } from '../Video';
 
@@ -17,6 +18,7 @@ const blockComponents = {
 	fullWidthContent: FullWidthContent,
 	gallery: Gallery,
 	cards: Cards,
+	testimonials: Testimonials,
 	video: Video,
 };
 

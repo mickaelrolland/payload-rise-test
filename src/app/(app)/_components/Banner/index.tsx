@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Gutter } from '../Gutter';
-import RichText from '../RichText';
+import { RichText } from '../RichText';
 import classes from './index.module.scss';
 
 interface Props {

@@ -1,309 +1,151 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 
-import { CMSLink } from '../CMSLink';
 import { Gutter } from '../Gutter';
-import { Image } from '../Image';
-import RichText from '../RichText';
 import classes from './index.module.scss';
 
-interface SocialMediaItem {
-	platform:
-		| 'facebook'
-		| 'twitter'
-		| 'instagram'
-		| 'linkedin'
-		| 'youtube'
-		| 'tiktok'
-		| 'other';
-	customPlatform?: string;
-	url: string;
-}
+export const Footer: React.FC = () => {
+	// Main navigation items for the footer
+	const mainNavItems = [
+		{ id: 'destinations', title: 'Destinations', url: '/destinations' },
+		{ id: 'hotels', title: 'Hôtels', url: '/hotels' },
+		{ id: 'private-homes', title: 'Private Homes', url: '/private-homes' },
+		{ id: 'gastronomie', title: 'Gastronomie', url: '/gastronomie' },
+		{ id: 'bien-etre', title: 'Bien-être', url: '/bien-etre' },
+		{ id: 'experiences', title: 'Expériences', url: '/experiences' },
+		{ id: 'travel-agents', title: 'Travel agents', url: '/travel-agents' },
+		{ id: 'carrieres', title: 'Carrières', url: '/carrieres' },
+		{ id: 'presse', title: 'Presse', url: '/presse' },
+	];
 
-interface FooterLinkSection {
-	title: string;
-	links: any[];
-}
+	// Secondary links
+	const secondaryLinks = [
+		{ id: 'bons-cadeaux', title: 'Bons cadeaux', url: '/bons-cadeaux' },
+		{ id: 'cgv', title: 'CGV', url: '/cgv' },
+		{
+			id: 'confidentialite',
+			title: 'Politique de confidentialité',
+			url: '/politique-de-confidentialite',
+		},
+		{
+			id: 'mentions-legales',
+			title: 'Mentions Légales',
+			url: '/mentions-legales',
+		},
+		{ id: 'cookies', title: 'Cookies', url: '/cookies' },
+		{ id: 'contact', title: 'Contact', url: '/contact' },
+		{ id: 'facebook', title: 'Facebook', url: 'https://facebook.com' },
+		{ id: 'linkedin', title: 'Linkedin', url: 'https://linkedin.com' },
+		{ id: 'instagram', title: 'Instagram', url: 'https://instagram.com' },
+	];
 
-interface Props {
-	footer: {
-		companyInfo?: {
-			name?: string;
-			logo?: any;
-			description?: any;
-		};
-		contactInfo?: {
-			email?: string;
-			phone?: string;
-			address?: string;
-		};
-		footerLinks?: FooterLinkSection[];
-		socialMedia?: SocialMediaItem[];
-		bottomSection?: {
-			copyrightText?: any;
-			legalLinks?: any[];
-		};
-		newsletter?: {
-			enabled?: boolean;
-			title?: string;
-			description?: string;
-			placeholder?: string;
-		};
-	};
-}
-
-const socialMediaIcons = {
-	facebook: '📘',
-	twitter: '🐦',
-	instagram: '📷',
-	linkedin: '💼',
-	youtube: '📺',
-	tiktok: '🎵',
-	other: '🔗',
-};
-
-export const Footer: React.FC<Props> = ({ footer }) => {
-	const {
-		companyInfo,
-		contactInfo,
-		footerLinks,
-		socialMedia,
-		bottomSection,
-		newsletter,
-	} = footer;
-
-	const handleNewsletterSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-		e.preventDefault();
-		// Handle newsletter submission here
-		const formData = new FormData(e.currentTarget);
-		const email = formData.get('email');
-		console.log('Newsletter signup:', email);
-		// You can integrate with your newsletter service here
-	};
+	// Location information
+	const locations = [
+		{
+			id: 'paris',
+			name: 'Paris',
+			phone: '800 8300500',
+			email: 'sales@resiliavons.com',
+		},
+		{
+			id: 'ramatuelle',
+			name: 'Ramatuelle',
+			phone: '+33 1552886516',
+			email: 'contact@resiliavons.com',
+		},
+		{
+			id: 'destination-03',
+			name: 'Destination 03',
+			phone: '+254 735047674',
+			email: 'inafraica@resiliavons.com',
+		},
+	];
 
 	return (
 		<footer className={classes.footer}>
 			<Gutter>
 				<div className={classes.container}>
-					{/* Top Section */}
-					<div className={classes.topSection}>
-						{/* Company Info */}
-						{companyInfo && (
-							<div className={classes.companyInfo}>
-								{companyInfo.logo && (
-									<div className={classes.logo}>
-										<Image
-											alt={
-												companyInfo.name ||
-												'Company Logo'
-											}
-											resource={companyInfo.logo}
-											className={classes.logoImage}
-										/>
-									</div>
-								)}
-								{companyInfo.name && (
-									<h3 className={classes.companyName}>
-										{companyInfo.name}
-									</h3>
-								)}
-								{companyInfo.description && (
-									<div className={classes.companyDescription}>
-										<RichText
-											content={companyInfo.description}
-										/>
-									</div>
-								)}
-							</div>
-						)}
-
-						{/* Footer Links */}
-						{footerLinks && footerLinks.length > 0 && (
-							<div className={classes.linksSection}>
-								{footerLinks.map((section, index) => (
-									<div
-										key={index}
-										className={classes.linkColumn}
+					{/* Main Navigation Section */}
+					<div className={classes.mainNavSection}>
+						<nav className={classes.mainNav}>
+							<ul className={classes.mainNavList}>
+								{mainNavItems.map((item) => (
+									<li
+										key={item.id}
+										className={classes.mainNavItem}
 									>
-										<h4 className={classes.linkTitle}>
-											{section.title}
-										</h4>
-										{section.links &&
-											section.links.length > 0 && (
-												<ul
-													className={classes.linkList}
-												>
-													{section.links.map(
-														(link, linkIndex) => (
-															<li
-																key={linkIndex}
-																className={
-																	classes.linkItem
-																}
-															>
-																<CMSLink
-																	{...link.link}
-																/>
-															</li>
-														),
-													)}
-												</ul>
-											)}
-									</div>
+										<Link
+											href={item.url}
+											className={classes.mainNavLink}
+										>
+											{item.title}
+										</Link>
+									</li>
 								))}
-							</div>
-						)}
-
-						{/* Contact Info & Newsletter */}
-						<div className={classes.contactSection}>
-							{contactInfo && (
-								<div className={classes.contactInfo}>
-									<h4 className={classes.contactTitle}>
-										Contact
-									</h4>
-									{contactInfo.email && (
-										<p className={classes.contactItem}>
-											<span
-												className={classes.contactLabel}
-											>
-												Email:
-											</span>
-											<a
-												href={`mailto:${contactInfo.email}`}
-											>
-												{contactInfo.email}
-											</a>
-										</p>
-									)}
-									{contactInfo.phone && (
-										<p className={classes.contactItem}>
-											<span
-												className={classes.contactLabel}
-											>
-												Phone:
-											</span>
-											<a
-												href={`tel:${contactInfo.phone}`}
-											>
-												{contactInfo.phone}
-											</a>
-										</p>
-									)}
-									{contactInfo.address && (
-										<p className={classes.contactItem}>
-											<span
-												className={classes.contactLabel}
-											>
-												Address:
-											</span>
-											{contactInfo.address}
-										</p>
-									)}
-								</div>
-							)}
-
-							{newsletter?.enabled && (
-								<div className={classes.newsletter}>
-									{newsletter.title && (
-										<h4 className={classes.newsletterTitle}>
-											{newsletter.title}
-										</h4>
-									)}
-									{newsletter.description && (
-										<p
-											className={
-												classes.newsletterDescription
-											}
-										>
-											{newsletter.description}
-										</p>
-									)}
-									<form
-										className={classes.newsletterForm}
-										onSubmit={handleNewsletterSubmit}
-									>
-										<input
-											type="email"
-											name="email"
-											placeholder={
-												newsletter.placeholder ||
-												'Enter your email'
-											}
-											className={classes.newsletterInput}
-											required
-										/>
-										<button
-											type="submit"
-											className={classes.newsletterButton}
-										>
-											Subscribe
-										</button>
-									</form>
-								</div>
-							)}
+							</ul>
+						</nav>
+						<div className={classes.boutique}>
+							<Link
+								href="/boutique"
+								className={classes.boutiqueLink}
+							>
+								<span className={classes.boutiqueIcon}>🛍️</span>
+								<span className={classes.boutiqueText}>
+									La boutique
+								</span>
+							</Link>
 						</div>
 					</div>
 
-					{/* Social Media */}
-					{socialMedia && socialMedia.length > 0 && (
-						<div className={classes.socialSection}>
-							<h4 className={classes.socialTitle}>Follow Us</h4>
-							<div className={classes.socialLinks}>
-								{socialMedia.map((social, index) => (
-									<a
-										key={index}
-										href={social.url}
-										target="_blank"
-										rel="noopener noreferrer"
-										className={classes.socialLink}
-										title={
-											social.customPlatform ||
-											social.platform
-										}
+					{/* Secondary Links Section */}
+					<div className={classes.secondarySection}>
+						<ul className={classes.secondaryList}>
+							{secondaryLinks.map((item) => (
+								<li
+									key={item.id}
+									className={classes.secondaryItem}
+								>
+									<Link
+										href={item.url}
+										className={classes.secondaryLink}
 									>
-										<span className={classes.socialIcon}>
-											{socialMediaIcons[social.platform]}
-										</span>
-										<span className={classes.socialLabel}>
-											{social.customPlatform ||
-												social.platform}
-										</span>
-									</a>
-								))}
-							</div>
-						</div>
-					)}
+										{item.title}
+									</Link>
+								</li>
+							))}
+						</ul>
+					</div>
 
-					{/* Bottom Section */}
-					{bottomSection && (
-						<div className={classes.bottomSection}>
-							<div className={classes.copyright}>
-								{bottomSection.copyrightText && (
-									<RichText
-										content={bottomSection.copyrightText}
-									/>
-								)}
+					{/* Locations Section */}
+					<div className={classes.locationsSection}>
+						{locations.map((location) => (
+							<div key={location.id} className={classes.location}>
+								<h3 className={classes.locationName}>
+									{location.name}
+								</h3>
+								<p className={classes.locationPhone}>
+									Tel:{' '}
+									<a href={`tel:${location.phone}`}>
+										{location.phone}
+									</a>
+								</p>
+								<p className={classes.locationEmail}>
+									<a href={`mailto:${location.email}`}>
+										{location.email}
+									</a>
+								</p>
 							</div>
-							{bottomSection.legalLinks &&
-								bottomSection.legalLinks.length > 0 && (
-									<ul className={classes.legalLinks}>
-										{bottomSection.legalLinks.map(
-											(link, index) => (
-												<li
-													key={index}
-													className={
-														classes.legalLinkItem
-													}
-												>
-													<CMSLink {...link.link} />
-												</li>
-											),
-										)}
-									</ul>
-								)}
-						</div>
-					)}
+						))}
+					</div>
+
+					{/* Copyright Section */}
+					<div className={classes.copyrightSection}>
+						<p className={classes.copyright}>
+							© 2025 La Reserve. All rights reserved.
+						</p>
+					</div>
 				</div>
 			</Gutter>
 		</footer>
